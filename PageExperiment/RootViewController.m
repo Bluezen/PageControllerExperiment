@@ -10,6 +10,10 @@
 #import "ModelController.h"
 #import "DataViewController.h"
 
+#import <TLYShyNavBar/TLYShyNavBarManager.h>
+
+#import "AMScrollingNavBar-swift.h"
+
 @interface RootViewController ()
 
 @property (readonly, strong, nonatomic) ModelController *modelController;
@@ -45,18 +49,23 @@
     
     if (newController) {
         newController.scrollView.delegate = self;
-        newController.cstrStackViewTop.constant = 200.0f;
+        newController.cstrStackViewTop.constant = 200.0f + 64;
         [newController.view setNeedsLayout];
         [newController.view layoutIfNeeded];
         
         // Adjust newController scrollView
-        newController.scrollView.contentOffset = CGPointMake(0, MIN(200, currentController.scrollView.contentOffset.y));
+        newController.scrollView.contentOffset = CGPointMake(0, MIN(200.0f + 44.0f, currentController.scrollView.contentOffset.y));
     }
 }
 
 -(void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed
 {
-    
+    if (completed) {
+//        DataViewController *previousController = previousViewControllers.firstObject;
+        DataViewController *currentController = pageViewController.viewControllers.firstObject;
+        
+        [(ScrollingNavigationController *)self.navigationController followScrollView:currentController.scrollView delay:10.0f];
+    }
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -67,8 +76,7 @@
         
         NSLog(@"Content Offset %f", scrollView.contentOffset.y);
         
-        self.cstrHeaderViewTop.constant = MAX(-scrollView.contentOffset.y, -200);
-        
+        self.cstrHeaderViewTop.constant = MAX(64.0f -scrollView.contentOffset.y , -200);
     }
 }
 
@@ -86,7 +94,10 @@
         self.pageViewController.dataSource = self.modelController;
         
         startingViewController.scrollView.delegate = self;
-        startingViewController.cstrStackViewTop.constant = 200;
+        
+        [(ScrollingNavigationController *)self.navigationController followScrollView:startingViewController.scrollView delay:10.0f];
+        
+        startingViewController.cstrStackViewTop.constant = 200 + 64;
     }
 }
 

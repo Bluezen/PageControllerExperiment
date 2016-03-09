@@ -1,0 +1,19 @@
+PODS:
+  - AMScrollingNavbar (2.0.13)
+  - BLKFlexibleHeightBar (1.0.2)
+  - GTScrollNavigationBar (0.4)
+  - TLYShyNavBar (1.0.0)
+
+DEPENDENCIES:
+  - AMScrollingNavbar (~> 2.0.1)
+  - BLKFlexibleHeightBar
+  - GTScrollNavigationBar
+  - TLYShyNavBar
+
+SPEC CHECKSUMS:
+  AMScrollingNavbar: 4445a6ce4b40c09ad56b28f2dd8d3516b350e089
+  BLKFlexibleHeightBar: b27572a69633d8e33f1f2bbc486b04d8e86f742d
+  GTScrollNavigationBar: 17e80b99c4250c92c82f31cd5e052a99422c2195
+  TLYShyNavBar: d313a1c50c58cb7af744829120eaa33ca8a998ce
+
+COCOAPODS: 0.39.0
