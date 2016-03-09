@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UIViewController <UIPageViewControllerDelegate>
+@interface RootViewController : UIViewController <UIPageViewControllerDelegate, UIScrollViewDelegate>
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
+
+@property (weak, nonatomic) IBOutlet UIView *headerView;
+
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *cstrHeaderViewTop;
 
 @end
 
