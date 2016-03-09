@@ -105,7 +105,7 @@
         <!--Scrolling Navigation Controller-->
         <scene sceneID="lfP-XN-gax">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JhL-3l-cPP" customClass="ScrollingNavigationController" customModule="AMScrollingNavbar" sceneMemberID="viewController">
+                <navigationController id="JhL-3l-cPP" customClass="ScrollingNavigationController" customModule="AMScrollingNavbar" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fjm-y6-dfi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

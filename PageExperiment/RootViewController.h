@@ -17,9 +17,6 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *cstrHeaderViewTop;
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-
-
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 
 @end
