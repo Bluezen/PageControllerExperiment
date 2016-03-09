@@ -39,12 +39,18 @@
 
 -(void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray<UIViewController *> *)pendingViewControllers
 {
-    DataViewController *controller = (DataViewController *)pendingViewControllers.firstObject;
+    DataViewController *currentController = (DataViewController *)pageViewController.viewControllers.firstObject;
     
-    if (controller) {
-        controller.scrollView.delegate = self;
-        controller.cstrStackViewTop.constant = 200.0f;
-        controller.scrollView.contentOffset = CGPointMake(0, MAX(-200, -CGRectGetMaxY(self.headerView.frame)));
+    DataViewController *newController = (DataViewController *)pendingViewControllers.firstObject;
+    
+    if (newController) {
+        newController.scrollView.delegate = self;
+        newController.cstrStackViewTop.constant = 200.0f;
+        [newController.view setNeedsLayout];
+        [newController.view layoutIfNeeded];
+        
+        // Adjust newController scrollView
+        newController.scrollView.contentOffset = CGPointMake(0, MIN(200, currentController.scrollView.contentOffset.y));
     }
 }
 
@@ -58,6 +64,8 @@
     DataViewController *currentController = self.pageViewController.viewControllers.firstObject;
     
     if (scrollView == currentController.scrollView) {
+        
+        NSLog(@"Content Offset %f", scrollView.contentOffset.y);
         
         self.cstrHeaderViewTop.constant = MAX(-scrollView.contentOffset.y, -200);
         
