@@ -21,33 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    // Configure the page view controller and add it as a child view controller.
-    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    self.pageViewController.delegate = self;
-
-    DataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
-    
-    
-    NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
-
-    self.pageViewController.dataSource = self.modelController;
-
-    [self addChildViewController:self.pageViewController];
-    [self.view insertSubview:self.pageViewController.view belowSubview:self.headerView];
-
-    
-    CGRect pageViewRect = self.view.bounds;
-    self.pageViewController.view.frame = pageViewRect;
-
-    [self.pageViewController didMoveToParentViewController:self];
-
-    // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
-    self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
-    
-    startingViewController.scrollView.delegate = self;
-    startingViewController.cstrStackViewTop.constant = CGRectGetHeight(self.headerView.frame);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -71,7 +44,7 @@
     if (controller) {
         controller.scrollView.delegate = self;
         controller.cstrStackViewTop.constant = 200.0f;
-        controller.scrollView.contentInset = UIEdgeInsetsMake(MAX(0, CGRectGetMaxY(self.headerView.frame)), 0,0,0);
+        controller.scrollView.contentOffset = CGPointMake(0, MAX(-200, -CGRectGetMaxY(self.headerView.frame)));
     }
 }
 
@@ -86,12 +59,26 @@
     
     if (scrollView == currentController.scrollView) {
         
-        if (currentController.cstrStackViewTop.constant < 200) {
-            
-        }
-        
         self.cstrHeaderViewTop.constant = MAX(-scrollView.contentOffset.y, -200);
         
+    }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"segueEmbedPageViewController"]) {
+        self.pageViewController = segue.destinationViewController;
+        
+        self.pageViewController.delegate = self;
+        
+        DataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
+        
+        [self.pageViewController setViewControllers:@[startingViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+        
+        self.pageViewController.dataSource = self.modelController;
+        
+        startingViewController.scrollView.delegate = self;
+        startingViewController.cstrStackViewTop.constant = 200;
     }
 }
 
