@@ -25,6 +25,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    self.headerScrollView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+    
+    if (self.pageViewController && [self.pageViewController.viewControllers.firstObject isKindOfClass:DataViewController.class]) {
+        [self.headerScrollView setNeedsLayout];
+        [self.headerScrollView layoutIfNeeded];
+        DataViewController *dataController = self.pageViewController.viewControllers.firstObject;
+        
+        dataController.cstrStackViewTop.constant = self.headerScrollView.contentSize.height + 64;
+        
+        self.headerScrollView.contentOffset = CGPointMake(0, -64);
+    }
+}
+
+-(void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,22 +67,21 @@
     
     if (newController) {
         newController.scrollView.delegate = self;
-        newController.cstrStackViewTop.constant = 200.0f + 64;
+        newController.cstrStackViewTop.constant = self.headerScrollView.contentSize.height + 64;
         [newController.view setNeedsLayout];
         [newController.view layoutIfNeeded];
         
         // Adjust newController scrollView
-        newController.scrollView.contentOffset = CGPointMake(0, MIN(200.0f + 44.0f, currentController.scrollView.contentOffset.y));
+        newController.scrollView.contentOffset = CGPointMake(0, MIN(self.headerScrollView.contentSize.height + 44.0f, currentController.scrollView.contentOffset.y));
     }
 }
 
 -(void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed
 {
     if (completed) {
-//        DataViewController *previousController = previousViewControllers.firstObject;
-        DataViewController *currentController = pageViewController.viewControllers.firstObject;
-        
-        [(ScrollingNavigationController *)self.navigationController followScrollView:currentController.scrollView delay:10.0f];
+//        DataViewController *currentController = pageViewController.viewControllers.firstObject;
+//        
+//        [(ScrollingNavigationController *)self.navigationController followScrollView:currentController.scrollView delay:10.0f];
     }
 }
 
@@ -76,7 +93,17 @@
         
         NSLog(@"Content Offset %f", scrollView.contentOffset.y);
         
-        self.cstrHeaderViewTop.constant = MAX(64.0f -scrollView.contentOffset.y , -200);
+//        self.cstrHeaderViewTop.constant = MAX(64.0f -scrollView.contentOffset.y , -self.headerScrollView.contentSize.height);
+        
+        CGFloat mapOffset = CGRectGetMinY(self.headerMapView.frame);
+        
+        if (scrollView.contentOffset.y < mapOffset) {
+            CGFloat yOffset = -MAX(64.0f -scrollView.contentOffset.y , -self.headerScrollView.contentSize.height);
+            
+            self.headerScrollView.contentOffset = CGPointMake(0, yOffset);
+        }
+        
+        
     }
 }
 
@@ -95,9 +122,7 @@
         
         startingViewController.scrollView.delegate = self;
         
-        [(ScrollingNavigationController *)self.navigationController followScrollView:startingViewController.scrollView delay:10.0f];
-        
-        startingViewController.cstrStackViewTop.constant = 200 + 64;
+//        [(ScrollingNavigationController *)self.navigationController followScrollView:startingViewController.scrollView delay:10.0f];
     }
 }
 

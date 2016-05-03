@@ -12,7 +12,10 @@
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *headerScrollView;
+@property (weak, nonatomic) IBOutlet UIStackView *headerStack;
 @property (weak, nonatomic) IBOutlet UIView *headerView;
+@property (weak, nonatomic) IBOutlet UIImageView *headerMapView;
 
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *cstrHeaderViewTop;
