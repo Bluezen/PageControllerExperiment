@@ -91,7 +91,7 @@
     
     if (scrollView == currentController.scrollView) {
         
-        NSLog(@"Content Offset %f", scrollView.contentOffset.y);
+//        NSLog(@"Content Offset %f", scrollView.contentOffset.y);
         
 //        self.cstrHeaderViewTop.constant = MAX(64.0f -scrollView.contentOffset.y , -self.headerScrollView.contentSize.height);
         

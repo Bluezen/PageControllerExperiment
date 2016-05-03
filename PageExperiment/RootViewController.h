@@ -8,14 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+#import <MapKit/MapKit.h>
+
 @interface RootViewController : UIViewController <UIPageViewControllerDelegate, UIScrollViewDelegate>
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *headerScrollView;
-@property (weak, nonatomic) IBOutlet UIStackView *headerStack;
 @property (weak, nonatomic) IBOutlet UIView *headerView;
-@property (weak, nonatomic) IBOutlet UIImageView *headerMapView;
+@property (weak, nonatomic) IBOutlet MKMapView *headerMapView;
 
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *cstrHeaderViewTop;

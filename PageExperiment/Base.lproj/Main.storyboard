@@ -68,38 +68,32 @@
                                                     <constraint firstAttribute="bottom" secondItem="uSf-9z-LzC" secondAttribute="bottom" constant="8" id="w3L-6G-hi7"/>
                                                 </constraints>
                                             </view>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Viv-9k-fo9">
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="COE-fI-YkE">
                                                 <rect key="frame" x="0.0" y="400" width="600" height="300"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="300" id="PhV-Rb-09I"/>
+                                                    <constraint firstAttribute="height" constant="300" id="RCs-Xg-xCQ"/>
                                                 </constraints>
-                                            </imageView>
+                                            </mapView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="mvg-j5-8Gh" secondAttribute="trailing" id="Dbx-CQ-5Nq"/>
-                                            <constraint firstAttribute="bottom" secondItem="Viv-9k-fo9" secondAttribute="bottom" id="FFq-bZ-eAe"/>
-                                            <constraint firstAttribute="trailing" secondItem="Viv-9k-fo9" secondAttribute="trailing" id="MnP-3t-cWe"/>
-                                            <constraint firstItem="mvg-j5-8Gh" firstAttribute="top" secondItem="Viv-9k-fo9" secondAttribute="bottom" id="MyS-4x-Cr8"/>
                                             <constraint firstItem="C5C-fB-J0M" firstAttribute="top" secondItem="EiP-aE-ywa" secondAttribute="top" id="OIN-XY-169"/>
-                                            <constraint firstItem="Viv-9k-fo9" firstAttribute="top" secondItem="mvg-j5-8Gh" secondAttribute="bottom" id="Q6t-CY-mmY"/>
+                                            <constraint firstItem="COE-fI-YkE" firstAttribute="leading" secondItem="EiP-aE-ywa" secondAttribute="leading" id="Rhd-Ec-XQL"/>
+                                            <constraint firstAttribute="bottom" secondItem="COE-fI-YkE" secondAttribute="bottom" id="XKN-qT-wOO"/>
                                             <constraint firstAttribute="bottom" secondItem="mvg-j5-8Gh" secondAttribute="bottom" id="cgf-QT-M25"/>
+                                            <constraint firstAttribute="trailing" secondItem="COE-fI-YkE" secondAttribute="trailing" id="ha3-Zk-2Xh"/>
                                             <constraint firstItem="mvg-j5-8Gh" firstAttribute="leading" secondItem="EiP-aE-ywa" secondAttribute="leading" id="jKK-OB-MTM"/>
                                             <constraint firstItem="mvg-j5-8Gh" firstAttribute="top" secondItem="EiP-aE-ywa" secondAttribute="top" constant="200" id="s1i-Uf-aJ8"/>
                                             <constraint firstAttribute="trailing" secondItem="C5C-fB-J0M" secondAttribute="trailing" id="sTb-7k-5wB"/>
-                                            <constraint firstItem="mvg-j5-8Gh" firstAttribute="top" secondItem="Viv-9k-fo9" secondAttribute="bottom" constant="-64" id="tBF-8a-pMC"/>
+                                            <constraint firstItem="COE-fI-YkE" firstAttribute="top" secondItem="mvg-j5-8Gh" secondAttribute="bottom" id="twn-hi-p8X"/>
                                             <constraint firstItem="mvg-j5-8Gh" firstAttribute="top" secondItem="C5C-fB-J0M" secondAttribute="bottom" id="wd8-RK-fha"/>
                                             <constraint firstItem="C5C-fB-J0M" firstAttribute="leading" secondItem="EiP-aE-ywa" secondAttribute="leading" id="x4q-1i-KCJ"/>
-                                            <constraint firstItem="mvg-j5-8Gh" firstAttribute="top" secondItem="Viv-9k-fo9" secondAttribute="bottom" constant="-64" id="yQC-VY-hyS"/>
-                                            <constraint firstItem="Viv-9k-fo9" firstAttribute="leading" secondItem="EiP-aE-ywa" secondAttribute="leading" id="za0-1D-n7w"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="OIN-XY-169"/>
-                                                <exclude reference="MyS-4x-Cr8"/>
                                                 <exclude reference="cgf-QT-M25"/>
-                                                <exclude reference="tBF-8a-pMC"/>
-                                                <exclude reference="yQC-VY-hyS"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -142,7 +136,7 @@
                     <connections>
                         <outlet property="containerView" destination="AQW-KZ-Td3" id="Qf3-mv-9i2"/>
                         <outlet property="cstrHeaderViewTop" destination="KrD-Qy-MM6" id="AQC-fh-iU5"/>
-                        <outlet property="headerMapView" destination="Viv-9k-fo9" id="IMd-cp-7NW"/>
+                        <outlet property="headerMapView" destination="COE-fI-YkE" id="Vfc-yW-zXg"/>
                         <outlet property="headerScrollView" destination="uhl-KS-Pij" id="e6E-oe-SUN"/>
                         <outlet property="headerView" destination="mvg-j5-8Gh" id="8yK-zd-HU8"/>
                     </connections>
@@ -192,7 +186,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="922"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4iN-BF-fdc">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4iN-BF-fdc" customClass="MyScrollview">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="922"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GJS-6p-QML">
@@ -302,6 +296,5 @@
     </scenes>
     <resources>
         <image name="6700.JPG" width="1024" height="669"/>
-        <image name="map.jpg" width="638" height="671"/>
     </resources>
 </document>
