@@ -12,4 +12,6 @@
 
 @property(nonatomic, strong) UIResponder *myResponder;
 
+@property(nonatomic, assign) BOOL shouldLog;
+
 @end

@@ -18,6 +18,8 @@
 		05AF471F1CD91CAE00AD5BD7 /* 6700.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 05AF471E1CD91CAE00AD5BD7 /* 6700.JPG */; };
 		05AF47251CD9428D00AD5BD7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AF47241CD9428D00AD5BD7 /* MapKit.framework */; };
 		05AF47281CD9533800AD5BD7 /* MyScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AF47271CD9533800AD5BD7 /* MyScrollview.m */; };
+		7AC565311CD9F625006AA921 /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC565301CD9F625006AA921 /* RootView.m */; };
+		7AE295141CDA22FE001C2E4D /* TouchOverlayApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE295131CDA22FE001C2E4D /* TouchOverlayApplication.m */; };
 		9A59FD78F6AC3FA191D0F0A2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D7440B097A90FFD8E20EC0 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,10 @@
 		10D7440B097A90FFD8E20EC0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7CFCBE7ED44047691C45A5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		70D23F019CBEF7B7D4FA450F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7AC5652F1CD9F624006AA921 /* RootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
+		7AC565301CD9F625006AA921 /* RootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
+		7AE295121CDA22FE001C2E4D /* TouchOverlayApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchOverlayApplication.h; sourceTree = "<group>"; };
+		7AE295131CDA22FE001C2E4D /* TouchOverlayApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchOverlayApplication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,10 @@
 				055F9EA21C8F989C00A95005 /* Supporting Files */,
 				05AF47261CD9533800AD5BD7 /* MyScrollview.h */,
 				05AF47271CD9533800AD5BD7 /* MyScrollview.m */,
+				7AC5652F1CD9F624006AA921 /* RootView.h */,
+				7AC565301CD9F625006AA921 /* RootView.m */,
+				7AE295121CDA22FE001C2E4D /* TouchOverlayApplication.h */,
+				7AE295131CDA22FE001C2E4D /* TouchOverlayApplication.m */,
 			);
 			path = PageExperiment;
 			sourceTree = "<group>";
@@ -253,11 +263,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				055F9EAD1C8F989D00A95005 /* DataViewController.m in Sources */,
+				7AE295141CDA22FE001C2E4D /* TouchOverlayApplication.m in Sources */,
 				05AF47281CD9533800AD5BD7 /* MyScrollview.m in Sources */,
 				055F9EA71C8F989C00A95005 /* AppDelegate.m in Sources */,
 				055F9EB01C8F989D00A95005 /* ModelController.m in Sources */,
 				055F9EA41C8F989C00A95005 /* main.m in Sources */,
 				055F9EAA1C8F989D00A95005 /* RootViewController.m in Sources */,
+				7AC565311CD9F625006AA921 /* RootView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

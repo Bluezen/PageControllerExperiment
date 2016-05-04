@@ -17,11 +17,18 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *headerScrollView;
 @property (weak, nonatomic) IBOutlet UIView *headerView;
 @property (weak, nonatomic) IBOutlet MKMapView *headerMapView;
+@property (weak, nonatomic) IBOutlet UIView *headerScrollViewContainerView;
 
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *cstrHeaderViewTop;
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
+
+- (IBAction)btnHeaderViewPushed:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *lblHeaderViewCenter;
+
+@property(nonatomic, assign) BOOL shouldIgnoreNextCurrentControllerScroll;
+@property(nonatomic, assign) BOOL shouldIgnoreNextHeaderScroll;
 
 @end
 

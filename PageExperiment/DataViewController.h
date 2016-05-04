@@ -16,6 +16,9 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
+
+@property (weak, nonatomic) IBOutlet UIStackView *stackView;
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *cstrStackViewTop;
 
 @end
