@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet MKMapView *headerMapView;
 @property (weak, nonatomic) IBOutlet UIView *headerScrollViewContainerView;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *cstrHeaderEmptyViewHeight;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *cstrHeaderViewTop;
 
@@ -26,9 +27,6 @@
 
 - (IBAction)btnHeaderViewPushed:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *lblHeaderViewCenter;
-
-@property(nonatomic, assign) BOOL shouldIgnoreNextCurrentControllerScroll;
-@property(nonatomic, assign) BOOL shouldIgnoreNextHeaderScroll;
 
 @end
 

@@ -1,1109 +1,3254 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		0334ACE54369B7E788FC77B7A5F67A08 /* AMScrollingNavbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E85CAFECBB62E2CEA4957BDC7AB3829 /* AMScrollingNavbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A927F5EA61B6C07404397C96F1B7DFB /* FacebookStyleBarBehaviorDefiner.h in Headers */ = {isa = PBXBuildFile; fileRef = 1853A1EB72B3E8DB9D62531701FADBFC /* FacebookStyleBarBehaviorDefiner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		120B7CD5DD00D9FF5154FD55CD4EE49C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		136CDF804C6DB1F93B6D97E9476DED81 /* BLKFlexibleHeightBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9467228929DC9FD0AE86FAE00651F833 /* BLKFlexibleHeightBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		183E20A67C4407B12C9D8C7EA98F4C61 /* BLKFlexibleHeightBarSubviewLayoutAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD8CA5584DAEBA84C2D740EC7CC6086 /* BLKFlexibleHeightBarSubviewLayoutAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1890E08DAB8B7AC42D94EA5AF5CE4DF6 /* TLYDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = B88BC94698B43757BD797138A3850FBD /* TLYDelegateProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1B065BA7D7E05581175E8471E786AFF8 /* ScrollingNavbar+Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5C5916E5E696DDF40F88EE7915078F /* ScrollingNavbar+Sizes.swift */; };
-		1C2DB4E7A8356C12273A526ADF37365A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		23AFA54C246EF4AC477D1319B5AEFD02 /* BLKFlexibleHeightBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46D5CFB851128BA164DD46899AC178 /* BLKFlexibleHeightBar-dummy.m */; };
-		24E068AEAE77D6A25163EA114831F477 /* TLYShyNavBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D79AFBEBEEFDD34936DB97BE90EA357B /* TLYShyNavBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27A34444F0C2A78A7F07FDF0AD322708 /* TLYDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4313F9ADD32CD5A3A000C24EA75E808 /* TLYDelegateProxy.m */; };
-		2893FD3A207C15F10775D6D7D906A18E /* GTScrollNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AF84FBE4BC8DB2A0287FA3741A90B55A /* GTScrollNavigationBar.m */; };
-		4121C3C8ED8E4C322EE96541B2A7AF2A /* SquareCashStyleBehaviorDefiner.h in Headers */ = {isa = PBXBuildFile; fileRef = 8353453A8CAEC87F41F0328621B0FB9F /* SquareCashStyleBehaviorDefiner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		430920B3321CEA63E2EAE47CA140D035 /* UIScrollView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 798A67AE551CB3CC613C25ECE5D6BC4F /* UIScrollView+Helpers.m */; };
-		5A5DFABABF943B4FBD74E28856C9EBF7 /* UIViewController+BetterLayoutGuides.h in Headers */ = {isa = PBXBuildFile; fileRef = B2B3E35A408541317C040828812F791A /* UIViewController+BetterLayoutGuides.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5BE89F47612F61C2191541F38BA2AB1A /* NSObject+TLYSwizzlingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BF438C70DF3049B429454A7AB657D86 /* NSObject+TLYSwizzlingHelpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5F6D973328F8F5E6760028CCD17CEBE6 /* ScrollingNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE14B6995460C1F017D03F1005BDF1 /* ScrollingNavigationViewController.swift */; };
-		658AE8E7414CD9F9217DA73D095A0FA4 /* UIView+BLKFlexibleHeightBarSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = 3409797BF9C6CC77C2D8C3E60DE8541C /* UIView+BLKFlexibleHeightBarSubview.m */; };
-		688783CFC4CC2FEC8568CFEF6FEE66E3 /* TLYShyParent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E749016B927A83A75DE2ED76704BEB5 /* TLYShyParent.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6FC4E01BEDFAD2ECF5783C4E16D34B17 /* ScrollingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190ED62FA26942DE27FAB79EC656E37 /* ScrollingNavigationController.swift */; };
-		715DE01D5EEE8E3B14C8558473C7D797 /* TLYShyStatusBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = B3411489E228157582C23E49E6ECCB64 /* TLYShyStatusBarController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		72A60A608EF9AC4760D3EB763FB9436C /* TLYShyNavBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F11D727157D32A1A1750771EE31EB754 /* TLYShyNavBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74B1AEDAE13BBE13C7B155E1B5C037A4 /* UIScrollView+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA438541B0C8E089E2F69F9C1244AF7 /* UIScrollView+Helpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		827B116713909DF873CD230E5ACA84C3 /* TLYShyScrollViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A77F9D90135AD477838D7B9D3E127404 /* TLYShyScrollViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8951FD601728EF45733E66C7B1F7EDEE /* TLYShyNavBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C3C3C3DF171633CF0D885EFF53709B /* TLYShyNavBarManager.m */; };
-		90D9E156AF5D9F8F149D3A30F15AF014 /* BLKFlexibleHeightBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A673FDF00787981257EDDB94F00AB913 /* BLKFlexibleHeightBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94B446794AAF3164B1FF87530E38FB05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		9AB862733F3330E42ECF32C6C9F5412B /* GTScrollNavigationBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F4907B43D31D0943E3E4AEB7F4C708 /* GTScrollNavigationBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AF3C2608A8AA9A72A01811619032A13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		9EA6B707658F73F48A164401C6854159 /* BLKFlexibleHeightBarSubviewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = B54F98DEB8E88B3628C561E2F66CC83C /* BLKFlexibleHeightBarSubviewLayoutAttributes.m */; };
-		9FD3A8D76E9CFB7B87BFF6CC38818355 /* BLKFlexibleHeightBarBehaviorDefiner.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F1B444BDC605135F1BC74FC6C9F14C /* BLKFlexibleHeightBarBehaviorDefiner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A02814CA6C93B58F5DF0E77F0B7E1DDB /* SquareCashStyleBehaviorDefiner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B22E08FAC72B0AA603FC9B270956F59 /* SquareCashStyleBehaviorDefiner.m */; };
-		B5B8985540776245F2DF414C524E4B64 /* AMScrollingNavbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F25EF94D38B006CDDC3B57F07FC063 /* AMScrollingNavbar-dummy.m */; };
-		BCEDD447FF3B8982D06854F545F2B72B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		BE2431A5BCE1A4BC22D7F37290E08DC8 /* TLYShyNavBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CD25ECF980061230AA476A06E614A1 /* TLYShyNavBar-dummy.m */; };
-		C351AAED65C08058A47640D53375FA40 /* UIView+BLKFlexibleHeightBarSubview.h in Headers */ = {isa = PBXBuildFile; fileRef = D71262DB18F5AD49220A080C5A1E8BFA /* UIView+BLKFlexibleHeightBarSubview.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA6C20F1158D7E1CB8CFFE93228A9688 /* UIViewController+BetterLayoutGuides.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE769B71F3ADD944A008B13C01E1737 /* UIViewController+BetterLayoutGuides.m */; };
-		CC206997EED453E0EEBA757ED975CEFA /* BLKFlexibleHeightBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 308EC6C69CE6985C8AE7DA7C894C1BEB /* BLKFlexibleHeightBar.m */; };
-		CF5C422E5C591F100805AFABB461D26D /* BLKFlexibleHeightBarBehaviorDefiner.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE039ED37F6B8324D9AD1035DEBD600 /* BLKFlexibleHeightBarBehaviorDefiner.m */; };
-		CF75C9D058ED100B0A7F4C3CC8ED9B80 /* BLKDelegateSplitter.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC96CAB8980D18D29330FFBF440F800 /* BLKDelegateSplitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D090A7187CBBE7BAF59A50030746DEC9 /* NSObject+TLYSwizzlingHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F40160DDC583AB2530426E7FF61B0BDA /* NSObject+TLYSwizzlingHelpers.m */; };
-		D09BA74C541668C2C10AFACABF15F13D /* BLKDelegateSplitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A615E5F9EF5EDD38A4B9AC4199DA4B /* BLKDelegateSplitter.m */; };
-		D20667746CABEB831C07D4382F98DBC1 /* TLYShyChild.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D8B01845C615FD3E4A48C207C051360 /* TLYShyChild.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D353C5513C109857CCDAFD65EED7EBD7 /* TLYShyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA3118D24ED6F4F1FA835154DFDC4B2 /* TLYShyViewController.m */; };
-		D3C69DF8AD450243EA5E1461679B3340 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4338675C06ADF78F593A5AD0C72C697 /* FacebookStyleBarBehaviorDefiner.m in Sources */ = {isa = PBXBuildFile; fileRef = DD90DFDC5F5F4F42D385F1ED28450B0B /* FacebookStyleBarBehaviorDefiner.m */; };
-		D77BB3FB1D466B0F4E8EC6CB2DCF11E6 /* TLYShyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF9A2326DE17F8176475EA293E432D /* TLYShyScrollViewController.m */; };
-		D997F718B7ADE7257647F4BE73FAAA46 /* TLYShyStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB3C49300C6A1F8779FDE86B525A5C2 /* TLYShyStatusBarController.m */; };
-		DE8A72981E62029C74B69F2985BFDD40 /* GTScrollNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 51092995EFE3777877BAC1CA305DF3E1 /* GTScrollNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1917C5E79E1FB0B246BF9385EB1471F /* GTScrollNavigationBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C3A1C45DD1A56AB34B5D7B3A728439 /* GTScrollNavigationBar-dummy.m */; };
-		E2CD6AD2DBE999BF1DBEBD495ACCCB91 /* TLYShyViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A376F225CD82680F37CACF5CCA71B20A /* TLYShyViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EFB551BDF5D1A1BF7BC26E70B4F38834 /* TLYShyNavBarFade.h in Headers */ = {isa = PBXBuildFile; fileRef = 287DCE24C2FA37EDC68E29C299BD3691 /* TLYShyNavBarFade.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA2186BFE99B395DE23A12C32F40EBBE /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		258EE8F511B9DB65846EB569DF66D304 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 536B9F35AFF1A6725F02302B5F55F59B;
-			remoteInfo = AMScrollingNavbar;
-		};
-		A919C5527B28218FECE863833D4CFBA8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8CE46647ECC6263CB13349C2128FA336;
-			remoteInfo = TLYShyNavBar;
-		};
-		ABDBE14C32E4B45B6F7C822937262797 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9BA0F1A2D6F71EA97A2E483EBE95B460;
-			remoteInfo = GTScrollNavigationBar;
-		};
-		DA3022E25AED05C297000FDDEC5A8521 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7AAA83A0B19E9AB585A6FFE3AAF1D304;
-			remoteInfo = BLKFlexibleHeightBar;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		0E5C5916E5E696DDF40F88EE7915078F /* ScrollingNavbar+Sizes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ScrollingNavbar+Sizes.swift"; path = "Source/ScrollingNavbar+Sizes.swift"; sourceTree = "<group>"; };
-		1853A1EB72B3E8DB9D62531701FADBFC /* FacebookStyleBarBehaviorDefiner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FacebookStyleBarBehaviorDefiner.h; path = BLKFlexibleHeightBar/FacebookStyleBarBehaviorDefiner.h; sourceTree = "<group>"; };
-		1ABF9A2326DE17F8176475EA293E432D /* TLYShyScrollViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyScrollViewController.m; path = TLYShyNavBar/ShyControllers/TLYShyScrollViewController.m; sourceTree = "<group>"; };
-		1C2B4FFC347EEEE8C433EBF368F8E46B /* AMScrollingNavbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMScrollingNavbar.xcconfig; sourceTree = "<group>"; };
-		1D8B01845C615FD3E4A48C207C051360 /* TLYShyChild.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyChild.h; path = TLYShyNavBar/ShyControllers/TLYShyChild.h; sourceTree = "<group>"; };
-		1E749016B927A83A75DE2ED76704BEB5 /* TLYShyParent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyParent.h; path = TLYShyNavBar/ShyControllers/TLYShyParent.h; sourceTree = "<group>"; };
-		22CD25ECF980061230AA476A06E614A1 /* TLYShyNavBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TLYShyNavBar-dummy.m"; sourceTree = "<group>"; };
-		287DCE24C2FA37EDC68E29C299BD3691 /* TLYShyNavBarFade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyNavBarFade.h; path = TLYShyNavBar/TLYShyNavBarFade.h; sourceTree = "<group>"; };
-		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		2DCF84EF5DFEABF777357954902B66F7 /* TLYShyNavBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TLYShyNavBar.xcconfig; sourceTree = "<group>"; };
-		2E6487BC4CC08EBE5CD8A40ED3294B9F /* AMScrollingNavbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AMScrollingNavbar.modulemap; sourceTree = "<group>"; };
-		2E85CAFECBB62E2CEA4957BDC7AB3829 /* AMScrollingNavbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMScrollingNavbar-umbrella.h"; sourceTree = "<group>"; };
-		308EC6C69CE6985C8AE7DA7C894C1BEB /* BLKFlexibleHeightBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLKFlexibleHeightBar.m; path = BLKFlexibleHeightBar/BLKFlexibleHeightBar.m; sourceTree = "<group>"; };
-		30A1ACB45F461257109ECB1AF38D6B98 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33A615E5F9EF5EDD38A4B9AC4199DA4B /* BLKDelegateSplitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLKDelegateSplitter.m; path = BLKFlexibleHeightBar/BLKDelegateSplitter.m; sourceTree = "<group>"; };
-		3409797BF9C6CC77C2D8C3E60DE8541C /* UIView+BLKFlexibleHeightBarSubview.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+BLKFlexibleHeightBarSubview.m"; path = "BLKFlexibleHeightBar/UIView+BLKFlexibleHeightBarSubview.m"; sourceTree = "<group>"; };
-		3BF438C70DF3049B429454A7AB657D86 /* NSObject+TLYSwizzlingHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TLYSwizzlingHelpers.h"; path = "TLYShyNavBar/Categories/NSObject+TLYSwizzlingHelpers.h"; sourceTree = "<group>"; };
-		3D39C438F5A8CFBAB66CE042FCC988F0 /* BLKFlexibleHeightBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BLKFlexibleHeightBar.xcconfig; sourceTree = "<group>"; };
-		3DE769B71F3ADD944A008B13C01E1737 /* UIViewController+BetterLayoutGuides.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+BetterLayoutGuides.m"; path = "TLYShyNavBar/Categories/UIViewController+BetterLayoutGuides.m"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		404A5FC7EFAB3DAA153489AA23615570 /* GTScrollNavigationBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTScrollNavigationBar-prefix.pch"; sourceTree = "<group>"; };
-		4A46D5CFB851128BA164DD46899AC178 /* BLKFlexibleHeightBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BLKFlexibleHeightBar-dummy.m"; sourceTree = "<group>"; };
-		51092995EFE3777877BAC1CA305DF3E1 /* GTScrollNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTScrollNavigationBar.h; path = GTScrollNavigationBar/GTScrollNavigationBar.h; sourceTree = "<group>"; };
-		5ABE14B6995460C1F017D03F1005BDF1 /* ScrollingNavigationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollingNavigationViewController.swift; path = Source/ScrollingNavigationViewController.swift; sourceTree = "<group>"; };
-		5AE039ED37F6B8324D9AD1035DEBD600 /* BLKFlexibleHeightBarBehaviorDefiner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLKFlexibleHeightBarBehaviorDefiner.m; path = BLKFlexibleHeightBar/BLKFlexibleHeightBarBehaviorDefiner.m; sourceTree = "<group>"; };
-		63F1B444BDC605135F1BC74FC6C9F14C /* BLKFlexibleHeightBarBehaviorDefiner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLKFlexibleHeightBarBehaviorDefiner.h; path = BLKFlexibleHeightBar/BLKFlexibleHeightBarBehaviorDefiner.h; sourceTree = "<group>"; };
-		69C3A1C45DD1A56AB34B5D7B3A728439 /* GTScrollNavigationBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTScrollNavigationBar-dummy.m"; sourceTree = "<group>"; };
-		724EB0CB71CC171CEF49E11990F739DF /* AMScrollingNavbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMScrollingNavbar-prefix.pch"; sourceTree = "<group>"; };
-		798A67AE551CB3CC613C25ECE5D6BC4F /* UIScrollView+Helpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+Helpers.m"; path = "TLYShyNavBar/Categories/UIScrollView+Helpers.m"; sourceTree = "<group>"; };
-		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		7C113BEACB1F588C67451D27215D9415 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D247D653DAF8F0BED6CB876438DC6D0 /* BLKFlexibleHeightBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BLKFlexibleHeightBar.modulemap; sourceTree = "<group>"; };
-		7F54FB952F9F94CCF4D14498E50FA2A3 /* BLKFlexibleHeightBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BLKFlexibleHeightBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FD8CA5584DAEBA84C2D740EC7CC6086 /* BLKFlexibleHeightBarSubviewLayoutAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLKFlexibleHeightBarSubviewLayoutAttributes.h; path = BLKFlexibleHeightBar/BLKFlexibleHeightBarSubviewLayoutAttributes.h; sourceTree = "<group>"; };
-		82F25EF94D38B006CDDC3B57F07FC063 /* AMScrollingNavbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMScrollingNavbar-dummy.m"; sourceTree = "<group>"; };
-		8353453A8CAEC87F41F0328621B0FB9F /* SquareCashStyleBehaviorDefiner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SquareCashStyleBehaviorDefiner.h; path = BLKFlexibleHeightBar/SquareCashStyleBehaviorDefiner.h; sourceTree = "<group>"; };
-		84C3C3C3DF171633CF0D885EFF53709B /* TLYShyNavBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyNavBarManager.m; path = TLYShyNavBar/TLYShyNavBarManager.m; sourceTree = "<group>"; };
-		859BAC1850C638B9BC71F1E6BB6FD08C /* AMScrollingNavbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMScrollingNavbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		85D7E319E359DD0D1D6EA677546A3A7F /* TLYShyNavBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TLYShyNavBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		86B89A1CB1BB2B97FF17D483A3C3F02A /* GTScrollNavigationBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTScrollNavigationBar.xcconfig; sourceTree = "<group>"; };
-		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		8AB3C49300C6A1F8779FDE86B525A5C2 /* TLYShyStatusBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyStatusBarController.m; path = TLYShyNavBar/ShyControllers/TLYShyStatusBarController.m; sourceTree = "<group>"; };
-		8B22E08FAC72B0AA603FC9B270956F59 /* SquareCashStyleBehaviorDefiner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SquareCashStyleBehaviorDefiner.m; path = BLKFlexibleHeightBar/SquareCashStyleBehaviorDefiner.m; sourceTree = "<group>"; };
-		8BA438541B0C8E089E2F69F9C1244AF7 /* UIScrollView+Helpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+Helpers.h"; path = "TLYShyNavBar/Categories/UIScrollView+Helpers.h"; sourceTree = "<group>"; };
-		92F4907B43D31D0943E3E4AEB7F4C708 /* GTScrollNavigationBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTScrollNavigationBar-umbrella.h"; sourceTree = "<group>"; };
-		9467228929DC9FD0AE86FAE00651F833 /* BLKFlexibleHeightBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLKFlexibleHeightBar.h; path = BLKFlexibleHeightBar/BLKFlexibleHeightBar.h; sourceTree = "<group>"; };
-		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		9CE7E01E48511CC842F94F6FC818E4C2 /* TLYShyNavBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TLYShyNavBar.modulemap; sourceTree = "<group>"; };
-		A1F4A8CC1A5AF7C0DE6AFEEBBCA1A4A7 /* BLKFlexibleHeightBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLKFlexibleHeightBar-prefix.pch"; sourceTree = "<group>"; };
-		A376F225CD82680F37CACF5CCA71B20A /* TLYShyViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyViewController.h; path = TLYShyNavBar/ShyControllers/TLYShyViewController.h; sourceTree = "<group>"; };
-		A673FDF00787981257EDDB94F00AB913 /* BLKFlexibleHeightBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLKFlexibleHeightBar-umbrella.h"; sourceTree = "<group>"; };
-		A77F9D90135AD477838D7B9D3E127404 /* TLYShyScrollViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyScrollViewController.h; path = TLYShyNavBar/ShyControllers/TLYShyScrollViewController.h; sourceTree = "<group>"; };
-		A8BBFA2307EE5E41B8EF5E2D0FC03C38 /* TLYShyNavBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TLYShyNavBar-prefix.pch"; sourceTree = "<group>"; };
-		AB1AFD874A2C504B76F88B670C76DE7B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACC96CAB8980D18D29330FFBF440F800 /* BLKDelegateSplitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLKDelegateSplitter.h; path = BLKFlexibleHeightBar/BLKDelegateSplitter.h; sourceTree = "<group>"; };
-		AF84FBE4BC8DB2A0287FA3741A90B55A /* GTScrollNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTScrollNavigationBar.m; path = GTScrollNavigationBar/GTScrollNavigationBar.m; sourceTree = "<group>"; };
-		B2B3E35A408541317C040828812F791A /* UIViewController+BetterLayoutGuides.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+BetterLayoutGuides.h"; path = "TLYShyNavBar/Categories/UIViewController+BetterLayoutGuides.h"; sourceTree = "<group>"; };
-		B3411489E228157582C23E49E6ECCB64 /* TLYShyStatusBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyStatusBarController.h; path = TLYShyNavBar/ShyControllers/TLYShyStatusBarController.h; sourceTree = "<group>"; };
-		B54F98DEB8E88B3628C561E2F66CC83C /* BLKFlexibleHeightBarSubviewLayoutAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLKFlexibleHeightBarSubviewLayoutAttributes.m; path = BLKFlexibleHeightBar/BLKFlexibleHeightBarSubviewLayoutAttributes.m; sourceTree = "<group>"; };
-		B88BC94698B43757BD797138A3850FBD /* TLYDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYDelegateProxy.h; path = TLYShyNavBar/Categories/TLYDelegateProxy.h; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BE6E7614E697B20F768A460D4F2722CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB08DAA177BDCAD7C34AD09ED0F25D8F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		CCDD10220EEA96B8BA65001696973641 /* GTScrollNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTScrollNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D71262DB18F5AD49220A080C5A1E8BFA /* UIView+BLKFlexibleHeightBarSubview.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+BLKFlexibleHeightBarSubview.h"; path = "BLKFlexibleHeightBar/UIView+BLKFlexibleHeightBarSubview.h"; sourceTree = "<group>"; };
-		D79AFBEBEEFDD34936DB97BE90EA357B /* TLYShyNavBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyNavBarManager.h; path = TLYShyNavBar/TLYShyNavBarManager.h; sourceTree = "<group>"; };
-		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		DD90DFDC5F5F4F42D385F1ED28450B0B /* FacebookStyleBarBehaviorDefiner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FacebookStyleBarBehaviorDefiner.m; path = BLKFlexibleHeightBar/FacebookStyleBarBehaviorDefiner.m; sourceTree = "<group>"; };
-		DEA3118D24ED6F4F1FA835154DFDC4B2 /* TLYShyViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyViewController.m; path = TLYShyNavBar/ShyControllers/TLYShyViewController.m; sourceTree = "<group>"; };
-		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F11D727157D32A1A1750771EE31EB754 /* TLYShyNavBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TLYShyNavBar-umbrella.h"; sourceTree = "<group>"; };
-		F190ED62FA26942DE27FAB79EC656E37 /* ScrollingNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollingNavigationController.swift; path = Source/ScrollingNavigationController.swift; sourceTree = "<group>"; };
-		F40160DDC583AB2530426E7FF61B0BDA /* NSObject+TLYSwizzlingHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TLYSwizzlingHelpers.m"; path = "TLYShyNavBar/Categories/NSObject+TLYSwizzlingHelpers.m"; sourceTree = "<group>"; };
-		F4313F9ADD32CD5A3A000C24EA75E808 /* TLYDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYDelegateProxy.m; path = TLYShyNavBar/Categories/TLYDelegateProxy.m; sourceTree = "<group>"; };
-		F46E075D2959AE2F821693A8A83ACBF6 /* GTScrollNavigationBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GTScrollNavigationBar.modulemap; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		2C5AB66004C14C2F73A6AE53798FF890 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				94B446794AAF3164B1FF87530E38FB05 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B515F35429A1654A3F074562DC5D626 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				120B7CD5DD00D9FF5154FD55CD4EE49C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3CE36BC62F503BC9C7435106F6142671 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BCEDD447FF3B8982D06854F545F2B72B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D76E4E597C666F72D2FA91F2D28B26D8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C2DB4E7A8356C12273A526ADF37365A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EFCA8A6DC5ECAB29DD9685A3AE2EADE5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9AF3C2608A8AA9A72A01811619032A13 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		110B241776340F60B5133F3DAC241D2C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				859BAC1850C638B9BC71F1E6BB6FD08C /* AMScrollingNavbar.framework */,
-				7F54FB952F9F94CCF4D14498E50FA2A3 /* BLKFlexibleHeightBar.framework */,
-				CCDD10220EEA96B8BA65001696973641 /* GTScrollNavigationBar.framework */,
-				CB08DAA177BDCAD7C34AD09ED0F25D8F /* Pods.framework */,
-				85D7E319E359DD0D1D6EA677546A3A7F /* TLYShyNavBar.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		26B96755279366277265D225EDBF4E8B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				30A1ACB45F461257109ECB1AF38D6B98 /* Info.plist */,
-				9CE7E01E48511CC842F94F6FC818E4C2 /* TLYShyNavBar.modulemap */,
-				2DCF84EF5DFEABF777357954902B66F7 /* TLYShyNavBar.xcconfig */,
-				22CD25ECF980061230AA476A06E614A1 /* TLYShyNavBar-dummy.m */,
-				A8BBFA2307EE5E41B8EF5E2D0FC03C38 /* TLYShyNavBar-prefix.pch */,
-				F11D727157D32A1A1750771EE31EB754 /* TLYShyNavBar-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TLYShyNavBar";
-			sourceTree = "<group>";
-		};
-		3B49E0838427EEF119E88E515F8734EF /* GTScrollNavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-				51092995EFE3777877BAC1CA305DF3E1 /* GTScrollNavigationBar.h */,
-				AF84FBE4BC8DB2A0287FA3741A90B55A /* GTScrollNavigationBar.m */,
-				9D67F27677A31D0E9D3EFA354FC1B6AB /* Support Files */,
-			);
-			path = GTScrollNavigationBar;
-			sourceTree = "<group>";
-		};
-		4BA043268447D208F0644E35A10747DA /* TLYShyNavBar */ = {
-			isa = PBXGroup;
-			children = (
-				3BF438C70DF3049B429454A7AB657D86 /* NSObject+TLYSwizzlingHelpers.h */,
-				F40160DDC583AB2530426E7FF61B0BDA /* NSObject+TLYSwizzlingHelpers.m */,
-				B88BC94698B43757BD797138A3850FBD /* TLYDelegateProxy.h */,
-				F4313F9ADD32CD5A3A000C24EA75E808 /* TLYDelegateProxy.m */,
-				1D8B01845C615FD3E4A48C207C051360 /* TLYShyChild.h */,
-				287DCE24C2FA37EDC68E29C299BD3691 /* TLYShyNavBarFade.h */,
-				D79AFBEBEEFDD34936DB97BE90EA357B /* TLYShyNavBarManager.h */,
-				84C3C3C3DF171633CF0D885EFF53709B /* TLYShyNavBarManager.m */,
-				1E749016B927A83A75DE2ED76704BEB5 /* TLYShyParent.h */,
-				A77F9D90135AD477838D7B9D3E127404 /* TLYShyScrollViewController.h */,
-				1ABF9A2326DE17F8176475EA293E432D /* TLYShyScrollViewController.m */,
-				B3411489E228157582C23E49E6ECCB64 /* TLYShyStatusBarController.h */,
-				8AB3C49300C6A1F8779FDE86B525A5C2 /* TLYShyStatusBarController.m */,
-				A376F225CD82680F37CACF5CCA71B20A /* TLYShyViewController.h */,
-				DEA3118D24ED6F4F1FA835154DFDC4B2 /* TLYShyViewController.m */,
-				8BA438541B0C8E089E2F69F9C1244AF7 /* UIScrollView+Helpers.h */,
-				798A67AE551CB3CC613C25ECE5D6BC4F /* UIScrollView+Helpers.m */,
-				B2B3E35A408541317C040828812F791A /* UIViewController+BetterLayoutGuides.h */,
-				3DE769B71F3ADD944A008B13C01E1737 /* UIViewController+BetterLayoutGuides.m */,
-				26B96755279366277265D225EDBF4E8B /* Support Files */,
-			);
-			path = TLYShyNavBar;
-			sourceTree = "<group>";
-		};
-		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
-				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
-				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
-				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
-				894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */,
-				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
-				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
-				2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */,
-				977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */,
-				DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				F0C830E4F70E816A49D09A00CE19E331 /* Pods */,
-				110B241776340F60B5133F3DAC241D2C /* Products */,
-				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		9A680E173A9160802FB711028EDE2524 /* AMScrollingNavbar */ = {
-			isa = PBXGroup;
-			children = (
-				0E5C5916E5E696DDF40F88EE7915078F /* ScrollingNavbar+Sizes.swift */,
-				F190ED62FA26942DE27FAB79EC656E37 /* ScrollingNavigationController.swift */,
-				5ABE14B6995460C1F017D03F1005BDF1 /* ScrollingNavigationViewController.swift */,
-				AFED5C1E6026F0E5F8A3A3A0714171E5 /* Support Files */,
-			);
-			path = AMScrollingNavbar;
-			sourceTree = "<group>";
-		};
-		9C5B84C9F18053A5F8A19822FDF574DB /* BLKFlexibleHeightBar */ = {
-			isa = PBXGroup;
-			children = (
-				ACC96CAB8980D18D29330FFBF440F800 /* BLKDelegateSplitter.h */,
-				33A615E5F9EF5EDD38A4B9AC4199DA4B /* BLKDelegateSplitter.m */,
-				9467228929DC9FD0AE86FAE00651F833 /* BLKFlexibleHeightBar.h */,
-				308EC6C69CE6985C8AE7DA7C894C1BEB /* BLKFlexibleHeightBar.m */,
-				63F1B444BDC605135F1BC74FC6C9F14C /* BLKFlexibleHeightBarBehaviorDefiner.h */,
-				5AE039ED37F6B8324D9AD1035DEBD600 /* BLKFlexibleHeightBarBehaviorDefiner.m */,
-				7FD8CA5584DAEBA84C2D740EC7CC6086 /* BLKFlexibleHeightBarSubviewLayoutAttributes.h */,
-				B54F98DEB8E88B3628C561E2F66CC83C /* BLKFlexibleHeightBarSubviewLayoutAttributes.m */,
-				1853A1EB72B3E8DB9D62531701FADBFC /* FacebookStyleBarBehaviorDefiner.h */,
-				DD90DFDC5F5F4F42D385F1ED28450B0B /* FacebookStyleBarBehaviorDefiner.m */,
-				8353453A8CAEC87F41F0328621B0FB9F /* SquareCashStyleBehaviorDefiner.h */,
-				8B22E08FAC72B0AA603FC9B270956F59 /* SquareCashStyleBehaviorDefiner.m */,
-				D71262DB18F5AD49220A080C5A1E8BFA /* UIView+BLKFlexibleHeightBarSubview.h */,
-				3409797BF9C6CC77C2D8C3E60DE8541C /* UIView+BLKFlexibleHeightBarSubview.m */,
-				D3C2B67D3505A4037EF7137CC1DBDB0A /* Support Files */,
-			);
-			path = BLKFlexibleHeightBar;
-			sourceTree = "<group>";
-		};
-		9D67F27677A31D0E9D3EFA354FC1B6AB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F46E075D2959AE2F821693A8A83ACBF6 /* GTScrollNavigationBar.modulemap */,
-				86B89A1CB1BB2B97FF17D483A3C3F02A /* GTScrollNavigationBar.xcconfig */,
-				69C3A1C45DD1A56AB34B5D7B3A728439 /* GTScrollNavigationBar-dummy.m */,
-				404A5FC7EFAB3DAA153489AA23615570 /* GTScrollNavigationBar-prefix.pch */,
-				92F4907B43D31D0943E3E4AEB7F4C708 /* GTScrollNavigationBar-umbrella.h */,
-				BE6E7614E697B20F768A460D4F2722CA /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GTScrollNavigationBar";
-			sourceTree = "<group>";
-		};
-		AFED5C1E6026F0E5F8A3A3A0714171E5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2E6487BC4CC08EBE5CD8A40ED3294B9F /* AMScrollingNavbar.modulemap */,
-				1C2B4FFC347EEEE8C433EBF368F8E46B /* AMScrollingNavbar.xcconfig */,
-				82F25EF94D38B006CDDC3B57F07FC063 /* AMScrollingNavbar-dummy.m */,
-				724EB0CB71CC171CEF49E11990F739DF /* AMScrollingNavbar-prefix.pch */,
-				2E85CAFECBB62E2CEA4957BDC7AB3829 /* AMScrollingNavbar-umbrella.h */,
-				7C113BEACB1F588C67451D27215D9415 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AMScrollingNavbar";
-			sourceTree = "<group>";
-		};
-		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		D3C2B67D3505A4037EF7137CC1DBDB0A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7D247D653DAF8F0BED6CB876438DC6D0 /* BLKFlexibleHeightBar.modulemap */,
-				3D39C438F5A8CFBAB66CE042FCC988F0 /* BLKFlexibleHeightBar.xcconfig */,
-				4A46D5CFB851128BA164DD46899AC178 /* BLKFlexibleHeightBar-dummy.m */,
-				A1F4A8CC1A5AF7C0DE6AFEEBBCA1A4A7 /* BLKFlexibleHeightBar-prefix.pch */,
-				A673FDF00787981257EDDB94F00AB913 /* BLKFlexibleHeightBar-umbrella.h */,
-				AB1AFD874A2C504B76F88B670C76DE7B /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/BLKFlexibleHeightBar";
-			sourceTree = "<group>";
-		};
-		F0C830E4F70E816A49D09A00CE19E331 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9A680E173A9160802FB711028EDE2524 /* AMScrollingNavbar */,
-				9C5B84C9F18053A5F8A19822FDF574DB /* BLKFlexibleHeightBar */,
-				3B49E0838427EEF119E88E515F8734EF /* GTScrollNavigationBar */,
-				4BA043268447D208F0644E35A10747DA /* TLYShyNavBar */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		269B83E64A509CADF249C257FF5B10DB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5BE89F47612F61C2191541F38BA2AB1A /* NSObject+TLYSwizzlingHelpers.h in Headers */,
-				1890E08DAB8B7AC42D94EA5AF5CE4DF6 /* TLYDelegateProxy.h in Headers */,
-				D20667746CABEB831C07D4382F98DBC1 /* TLYShyChild.h in Headers */,
-				72A60A608EF9AC4760D3EB763FB9436C /* TLYShyNavBar-umbrella.h in Headers */,
-				EFB551BDF5D1A1BF7BC26E70B4F38834 /* TLYShyNavBarFade.h in Headers */,
-				24E068AEAE77D6A25163EA114831F477 /* TLYShyNavBarManager.h in Headers */,
-				688783CFC4CC2FEC8568CFEF6FEE66E3 /* TLYShyParent.h in Headers */,
-				827B116713909DF873CD230E5ACA84C3 /* TLYShyScrollViewController.h in Headers */,
-				715DE01D5EEE8E3B14C8558473C7D797 /* TLYShyStatusBarController.h in Headers */,
-				E2CD6AD2DBE999BF1DBEBD495ACCCB91 /* TLYShyViewController.h in Headers */,
-				74B1AEDAE13BBE13C7B155E1B5C037A4 /* UIScrollView+Helpers.h in Headers */,
-				5A5DFABABF943B4FBD74E28856C9EBF7 /* UIViewController+BetterLayoutGuides.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80C38814B3FBB214B7FCD83249751252 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0334ACE54369B7E788FC77B7A5F67A08 /* AMScrollingNavbar-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		822E63BC0DF0B878579C697B4DFB0CEE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9AB862733F3330E42ECF32C6C9F5412B /* GTScrollNavigationBar-umbrella.h in Headers */,
-				DE8A72981E62029C74B69F2985BFDD40 /* GTScrollNavigationBar.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5CE5CB3B0807D27EA8615304E0383B6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3C69DF8AD450243EA5E1461679B3340 /* Pods-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DAAE6855DE85C44EF14593D60F1ADA15 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF75C9D058ED100B0A7F4C3CC8ED9B80 /* BLKDelegateSplitter.h in Headers */,
-				90D9E156AF5D9F8F149D3A30F15AF014 /* BLKFlexibleHeightBar-umbrella.h in Headers */,
-				136CDF804C6DB1F93B6D97E9476DED81 /* BLKFlexibleHeightBar.h in Headers */,
-				9FD3A8D76E9CFB7B87BFF6CC38818355 /* BLKFlexibleHeightBarBehaviorDefiner.h in Headers */,
-				183E20A67C4407B12C9D8C7EA98F4C61 /* BLKFlexibleHeightBarSubviewLayoutAttributes.h in Headers */,
-				0A927F5EA61B6C07404397C96F1B7DFB /* FacebookStyleBarBehaviorDefiner.h in Headers */,
-				4121C3C8ED8E4C322EE96541B2A7AF2A /* SquareCashStyleBehaviorDefiner.h in Headers */,
-				C351AAED65C08058A47640D53375FA40 /* UIView+BLKFlexibleHeightBarSubview.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		536B9F35AFF1A6725F02302B5F55F59B /* AMScrollingNavbar */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4A179D6C79F6EFFD8C35F7FC04DAD800 /* Build configuration list for PBXNativeTarget "AMScrollingNavbar" */;
-			buildPhases = (
-				C213588E5A024707F319D8C0F16AC924 /* Sources */,
-				EFCA8A6DC5ECAB29DD9685A3AE2EADE5 /* Frameworks */,
-				80C38814B3FBB214B7FCD83249751252 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AMScrollingNavbar;
-			productName = AMScrollingNavbar;
-			productReference = 859BAC1850C638B9BC71F1E6BB6FD08C /* AMScrollingNavbar.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6BE8D2EFAB034E920531D7C5FF395F00 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 03DDCED9E8F69ED3483F8CD581FF12F8 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				D057C09551A92BD54C627876A9947AF8 /* Sources */,
-				3CE36BC62F503BC9C7435106F6142671 /* Frameworks */,
-				C5CE5CB3B0807D27EA8615304E0383B6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				829699BB1667A9E1C7EA1400D2365E1B /* PBXTargetDependency */,
-				5C56B57F01232752AFD9A63FCC5524DC /* PBXTargetDependency */,
-				EFD0264E83FD13A81231D45E4BD1180B /* PBXTargetDependency */,
-				ABFC7CDEA09986CD70D5FE5E1EDEBDDA /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = CB08DAA177BDCAD7C34AD09ED0F25D8F /* Pods.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7AAA83A0B19E9AB585A6FFE3AAF1D304 /* BLKFlexibleHeightBar */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DD10D22F914F310C572A932FCCD1365D /* Build configuration list for PBXNativeTarget "BLKFlexibleHeightBar" */;
-			buildPhases = (
-				E73CF6F142DC1028D517807586D9B5E0 /* Sources */,
-				3B515F35429A1654A3F074562DC5D626 /* Frameworks */,
-				DAAE6855DE85C44EF14593D60F1ADA15 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BLKFlexibleHeightBar;
-			productName = BLKFlexibleHeightBar;
-			productReference = 7F54FB952F9F94CCF4D14498E50FA2A3 /* BLKFlexibleHeightBar.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		8CE46647ECC6263CB13349C2128FA336 /* TLYShyNavBar */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E9AE9A22BA3C5EA1438992F6CCD860BB /* Build configuration list for PBXNativeTarget "TLYShyNavBar" */;
-			buildPhases = (
-				2204ECC7DF3933450022047BB32E9FA0 /* Sources */,
-				D76E4E597C666F72D2FA91F2D28B26D8 /* Frameworks */,
-				269B83E64A509CADF249C257FF5B10DB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TLYShyNavBar;
-			productName = TLYShyNavBar;
-			productReference = 85D7E319E359DD0D1D6EA677546A3A7F /* TLYShyNavBar.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9BA0F1A2D6F71EA97A2E483EBE95B460 /* GTScrollNavigationBar */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0C1AEDD0F867B84A0898857F18F7A8D8 /* Build configuration list for PBXNativeTarget "GTScrollNavigationBar" */;
-			buildPhases = (
-				9037D500826F0F325F47DE2B53C24D95 /* Sources */,
-				2C5AB66004C14C2F73A6AE53798FF890 /* Frameworks */,
-				822E63BC0DF0B878579C697B4DFB0CEE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GTScrollNavigationBar;
-			productName = GTScrollNavigationBar;
-			productReference = CCDD10220EEA96B8BA65001696973641 /* GTScrollNavigationBar.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 110B241776340F60B5133F3DAC241D2C /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				536B9F35AFF1A6725F02302B5F55F59B /* AMScrollingNavbar */,
-				7AAA83A0B19E9AB585A6FFE3AAF1D304 /* BLKFlexibleHeightBar */,
-				9BA0F1A2D6F71EA97A2E483EBE95B460 /* GTScrollNavigationBar */,
-				6BE8D2EFAB034E920531D7C5FF395F00 /* Pods */,
-				8CE46647ECC6263CB13349C2128FA336 /* TLYShyNavBar */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		2204ECC7DF3933450022047BB32E9FA0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D090A7187CBBE7BAF59A50030746DEC9 /* NSObject+TLYSwizzlingHelpers.m in Sources */,
-				27A34444F0C2A78A7F07FDF0AD322708 /* TLYDelegateProxy.m in Sources */,
-				BE2431A5BCE1A4BC22D7F37290E08DC8 /* TLYShyNavBar-dummy.m in Sources */,
-				8951FD601728EF45733E66C7B1F7EDEE /* TLYShyNavBarManager.m in Sources */,
-				D77BB3FB1D466B0F4E8EC6CB2DCF11E6 /* TLYShyScrollViewController.m in Sources */,
-				D997F718B7ADE7257647F4BE73FAAA46 /* TLYShyStatusBarController.m in Sources */,
-				D353C5513C109857CCDAFD65EED7EBD7 /* TLYShyViewController.m in Sources */,
-				430920B3321CEA63E2EAE47CA140D035 /* UIScrollView+Helpers.m in Sources */,
-				CA6C20F1158D7E1CB8CFFE93228A9688 /* UIViewController+BetterLayoutGuides.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9037D500826F0F325F47DE2B53C24D95 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1917C5E79E1FB0B246BF9385EB1471F /* GTScrollNavigationBar-dummy.m in Sources */,
-				2893FD3A207C15F10775D6D7D906A18E /* GTScrollNavigationBar.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C213588E5A024707F319D8C0F16AC924 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5B8985540776245F2DF414C524E4B64 /* AMScrollingNavbar-dummy.m in Sources */,
-				1B065BA7D7E05581175E8471E786AFF8 /* ScrollingNavbar+Sizes.swift in Sources */,
-				6FC4E01BEDFAD2ECF5783C4E16D34B17 /* ScrollingNavigationController.swift in Sources */,
-				5F6D973328F8F5E6760028CCD17CEBE6 /* ScrollingNavigationViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D057C09551A92BD54C627876A9947AF8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA2186BFE99B395DE23A12C32F40EBBE /* Pods-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E73CF6F142DC1028D517807586D9B5E0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D09BA74C541668C2C10AFACABF15F13D /* BLKDelegateSplitter.m in Sources */,
-				23AFA54C246EF4AC477D1319B5AEFD02 /* BLKFlexibleHeightBar-dummy.m in Sources */,
-				CC206997EED453E0EEBA757ED975CEFA /* BLKFlexibleHeightBar.m in Sources */,
-				CF5C422E5C591F100805AFABB461D26D /* BLKFlexibleHeightBarBehaviorDefiner.m in Sources */,
-				9EA6B707658F73F48A164401C6854159 /* BLKFlexibleHeightBarSubviewLayoutAttributes.m in Sources */,
-				D4338675C06ADF78F593A5AD0C72C697 /* FacebookStyleBarBehaviorDefiner.m in Sources */,
-				A02814CA6C93B58F5DF0E77F0B7E1DDB /* SquareCashStyleBehaviorDefiner.m in Sources */,
-				658AE8E7414CD9F9217DA73D095A0FA4 /* UIView+BLKFlexibleHeightBarSubview.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5C56B57F01232752AFD9A63FCC5524DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BLKFlexibleHeightBar;
-			target = 7AAA83A0B19E9AB585A6FFE3AAF1D304 /* BLKFlexibleHeightBar */;
-			targetProxy = DA3022E25AED05C297000FDDEC5A8521 /* PBXContainerItemProxy */;
-		};
-		829699BB1667A9E1C7EA1400D2365E1B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AMScrollingNavbar;
-			target = 536B9F35AFF1A6725F02302B5F55F59B /* AMScrollingNavbar */;
-			targetProxy = 258EE8F511B9DB65846EB569DF66D304 /* PBXContainerItemProxy */;
-		};
-		ABFC7CDEA09986CD70D5FE5E1EDEBDDA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TLYShyNavBar;
-			target = 8CE46647ECC6263CB13349C2128FA336 /* TLYShyNavBar */;
-			targetProxy = A919C5527B28218FECE863833D4CFBA8 /* PBXContainerItemProxy */;
-		};
-		EFD0264E83FD13A81231D45E4BD1180B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GTScrollNavigationBar;
-			target = 9BA0F1A2D6F71EA97A2E483EBE95B460 /* GTScrollNavigationBar */;
-			targetProxy = ABDBE14C32E4B45B6F7C822937262797 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		2EB0AFD322DBD0C9E02AAA325284C76C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3D470C10DD21C48A57A8A57E6839B5CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C2B4FFC347EEEE8C433EBF368F8E46B /* AMScrollingNavbar.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AMScrollingNavbar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AMScrollingNavbar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		478E5E2ED73726ACED841EBE75AF497A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D39C438F5A8CFBAB66CE042FCC988F0 /* BLKFlexibleHeightBar.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BLKFlexibleHeightBar/BLKFlexibleHeightBar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BLKFlexibleHeightBar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BLKFlexibleHeightBar/BLKFlexibleHeightBar.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BLKFlexibleHeightBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		6911495EAB347BCA76246494EC410C73 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86B89A1CB1BB2B97FF17D483A3C3F02A /* GTScrollNavigationBar.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GTScrollNavigationBar/GTScrollNavigationBar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GTScrollNavigationBar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GTScrollNavigationBar/GTScrollNavigationBar.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = GTScrollNavigationBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		809B24D06955EA66EFA5F06E09ADCDB3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C2B4FFC347EEEE8C433EBF368F8E46B /* AMScrollingNavbar.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AMScrollingNavbar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AMScrollingNavbar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8B94DF7442B5FE2815B9629E876787D4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DCF84EF5DFEABF777357954902B66F7 /* TLYShyNavBar.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TLYShyNavBar/TLYShyNavBar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TLYShyNavBar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TLYShyNavBar/TLYShyNavBar.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TLYShyNavBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D3C11A149015DC3E5C77DF277C0A6704 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EBF68A4062AC2C9B3CE6A519B2685F1B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86B89A1CB1BB2B97FF17D483A3C3F02A /* GTScrollNavigationBar.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GTScrollNavigationBar/GTScrollNavigationBar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GTScrollNavigationBar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GTScrollNavigationBar/GTScrollNavigationBar.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = GTScrollNavigationBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F7CFEBBE46CDBC0C5F744B1FE157A6BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D39C438F5A8CFBAB66CE042FCC988F0 /* BLKFlexibleHeightBar.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BLKFlexibleHeightBar/BLKFlexibleHeightBar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BLKFlexibleHeightBar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BLKFlexibleHeightBar/BLKFlexibleHeightBar.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BLKFlexibleHeightBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FF3D638AB4661DB1487D2A0728E23145 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DCF84EF5DFEABF777357954902B66F7 /* TLYShyNavBar.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TLYShyNavBar/TLYShyNavBar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TLYShyNavBar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TLYShyNavBar/TLYShyNavBar.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TLYShyNavBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		03DDCED9E8F69ED3483F8CD581FF12F8 /* Build configuration list for PBXNativeTarget "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D3C11A149015DC3E5C77DF277C0A6704 /* Debug */,
-				2EB0AFD322DBD0C9E02AAA325284C76C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0C1AEDD0F867B84A0898857F18F7A8D8 /* Build configuration list for PBXNativeTarget "GTScrollNavigationBar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EBF68A4062AC2C9B3CE6A519B2685F1B /* Debug */,
-				6911495EAB347BCA76246494EC410C73 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
-				74857149DC1E0D599B8A01A78349A926 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4A179D6C79F6EFFD8C35F7FC04DAD800 /* Build configuration list for PBXNativeTarget "AMScrollingNavbar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				809B24D06955EA66EFA5F06E09ADCDB3 /* Debug */,
-				3D470C10DD21C48A57A8A57E6839B5CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DD10D22F914F310C572A932FCCD1365D /* Build configuration list for PBXNativeTarget "BLKFlexibleHeightBar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F7CFEBBE46CDBC0C5F744B1FE157A6BC /* Debug */,
-				478E5E2ED73726ACED841EBE75AF497A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E9AE9A22BA3C5EA1438992F6CCD860BB /* Build configuration list for PBXNativeTarget "TLYShyNavBar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FF3D638AB4661DB1487D2A0728E23145 /* Debug */,
-				8B94DF7442B5FE2815B9629E876787D4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0334ACE54369B7E788FC77B7A5F67A08</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2E85CAFECBB62E2CEA4957BDC7AB3829</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>03DDCED9E8F69ED3483F8CD581FF12F8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D3C11A149015DC3E5C77DF277C0A6704</string>
+				<string>2EB0AFD322DBD0C9E02AAA325284C76C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>0A927F5EA61B6C07404397C96F1B7DFB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1853A1EB72B3E8DB9D62531701FADBFC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>0C1AEDD0F867B84A0898857F18F7A8D8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>EBF68A4062AC2C9B3CE6A519B2685F1B</string>
+				<string>6911495EAB347BCA76246494EC410C73</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>0E5C5916E5E696DDF40F88EE7915078F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ScrollingNavbar+Sizes.swift</string>
+			<key>path</key>
+			<string>Source/ScrollingNavbar+Sizes.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>110B241776340F60B5133F3DAC241D2C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>859BAC1850C638B9BC71F1E6BB6FD08C</string>
+				<string>7F54FB952F9F94CCF4D14498E50FA2A3</string>
+				<string>CCDD10220EEA96B8BA65001696973641</string>
+				<string>CB08DAA177BDCAD7C34AD09ED0F25D8F</string>
+				<string>85D7E319E359DD0D1D6EA677546A3A7F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>120B7CD5DD00D9FF5154FD55CD4EE49C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>136CDF804C6DB1F93B6D97E9476DED81</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9467228929DC9FD0AE86FAE00651F833</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>183E20A67C4407B12C9D8C7EA98F4C61</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7FD8CA5584DAEBA84C2D740EC7CC6086</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1853A1EB72B3E8DB9D62531701FADBFC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FacebookStyleBarBehaviorDefiner.h</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/FacebookStyleBarBehaviorDefiner.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1890E08DAB8B7AC42D94EA5AF5CE4DF6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B88BC94698B43757BD797138A3850FBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1ABF9A2326DE17F8176475EA293E432D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>TLYShyScrollViewController.m</string>
+			<key>path</key>
+			<string>TLYShyNavBar/ShyControllers/TLYShyScrollViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1B065BA7D7E05581175E8471E786AFF8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0E5C5916E5E696DDF40F88EE7915078F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1C2B4FFC347EEEE8C433EBF368F8E46B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>AMScrollingNavbar.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1C2DB4E7A8356C12273A526ADF37365A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1D8B01845C615FD3E4A48C207C051360</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TLYShyChild.h</string>
+			<key>path</key>
+			<string>TLYShyNavBar/ShyControllers/TLYShyChild.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1E749016B927A83A75DE2ED76704BEB5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TLYShyParent.h</string>
+			<key>path</key>
+			<string>TLYShyNavBar/ShyControllers/TLYShyParent.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2204ECC7DF3933450022047BB32E9FA0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D090A7187CBBE7BAF59A50030746DEC9</string>
+				<string>27A34444F0C2A78A7F07FDF0AD322708</string>
+				<string>BE2431A5BCE1A4BC22D7F37290E08DC8</string>
+				<string>8951FD601728EF45733E66C7B1F7EDEE</string>
+				<string>D77BB3FB1D466B0F4E8EC6CB2DCF11E6</string>
+				<string>D997F718B7ADE7257647F4BE73FAAA46</string>
+				<string>D353C5513C109857CCDAFD65EED7EBD7</string>
+				<string>430920B3321CEA63E2EAE47CA140D035</string>
+				<string>CA6C20F1158D7E1CB8CFFE93228A9688</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>22CD25ECF980061230AA476A06E614A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TLYShyNavBar-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>23AFA54C246EF4AC477D1319B5AEFD02</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4A46D5CFB851128BA164DD46899AC178</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>24E068AEAE77D6A25163EA114831F477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D79AFBEBEEFDD34936DB97BE90EA357B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>258EE8F511B9DB65846EB569DF66D304</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>536B9F35AFF1A6725F02302B5F55F59B</string>
+			<key>remoteInfo</key>
+			<string>AMScrollingNavbar</string>
+		</dict>
+		<key>269B83E64A509CADF249C257FF5B10DB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5BE89F47612F61C2191541F38BA2AB1A</string>
+				<string>1890E08DAB8B7AC42D94EA5AF5CE4DF6</string>
+				<string>D20667746CABEB831C07D4382F98DBC1</string>
+				<string>72A60A608EF9AC4760D3EB763FB9436C</string>
+				<string>EFB551BDF5D1A1BF7BC26E70B4F38834</string>
+				<string>24E068AEAE77D6A25163EA114831F477</string>
+				<string>688783CFC4CC2FEC8568CFEF6FEE66E3</string>
+				<string>827B116713909DF873CD230E5ACA84C3</string>
+				<string>715DE01D5EEE8E3B14C8558473C7D797</string>
+				<string>E2CD6AD2DBE999BF1DBEBD495ACCCB91</string>
+				<string>74B1AEDAE13BBE13C7B155E1B5C037A4</string>
+				<string>5A5DFABABF943B4FBD74E28856C9EBF7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>26B96755279366277265D225EDBF4E8B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>30A1ACB45F461257109ECB1AF38D6B98</string>
+				<string>9CE7E01E48511CC842F94F6FC818E4C2</string>
+				<string>2DCF84EF5DFEABF777357954902B66F7</string>
+				<string>22CD25ECF980061230AA476A06E614A1</string>
+				<string>A8BBFA2307EE5E41B8EF5E2D0FC03C38</string>
+				<string>F11D727157D32A1A1750771EE31EB754</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/TLYShyNavBar</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27A34444F0C2A78A7F07FDF0AD322708</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F4313F9ADD32CD5A3A000C24EA75E808</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>287DCE24C2FA37EDC68E29C299BD3691</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TLYShyNavBarFade.h</string>
+			<key>path</key>
+			<string>TLYShyNavBar/TLYShyNavBarFade.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2893FD3A207C15F10775D6D7D906A18E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AF84FBE4BC8DB2A0287FA3741A90B55A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2BCC458FDD5F692BBB2BFC64BB5701FC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2C5AB66004C14C2F73A6AE53798FF890</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>94B446794AAF3164B1FF87530E38FB05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5CE5176205D06FF3FFE3DDDA9291E44B</string>
+				<string>74857149DC1E0D599B8A01A78349A926</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2DCF84EF5DFEABF777357954902B66F7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>TLYShyNavBar.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2E6487BC4CC08EBE5CD8A40ED3294B9F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>AMScrollingNavbar.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2E85CAFECBB62E2CEA4957BDC7AB3829</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AMScrollingNavbar-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2EB0AFD322DBD0C9E02AAA325284C76C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DA312349A49333542E6F4B36B329960E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods/Pods.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>308EC6C69CE6985C8AE7DA7C894C1BEB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BLKFlexibleHeightBar.m</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/BLKFlexibleHeightBar.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>30A1ACB45F461257109ECB1AF38D6B98</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>33A615E5F9EF5EDD38A4B9AC4199DA4B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BLKDelegateSplitter.m</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/BLKDelegateSplitter.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3409797BF9C6CC77C2D8C3E60DE8541C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIView+BLKFlexibleHeightBarSubview.m</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/UIView+BLKFlexibleHeightBarSubview.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B49E0838427EEF119E88E515F8734EF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>51092995EFE3777877BAC1CA305DF3E1</string>
+				<string>AF84FBE4BC8DB2A0287FA3741A90B55A</string>
+				<string>9D67F27677A31D0E9D3EFA354FC1B6AB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>GTScrollNavigationBar</string>
+			<key>path</key>
+			<string>GTScrollNavigationBar</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B515F35429A1654A3F074562DC5D626</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>120B7CD5DD00D9FF5154FD55CD4EE49C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3BF438C70DF3049B429454A7AB657D86</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>NSObject+TLYSwizzlingHelpers.h</string>
+			<key>path</key>
+			<string>TLYShyNavBar/Categories/NSObject+TLYSwizzlingHelpers.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3CE36BC62F503BC9C7435106F6142671</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>BCEDD447FF3B8982D06854F545F2B72B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3D39C438F5A8CFBAB66CE042FCC988F0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D470C10DD21C48A57A8A57E6839B5CF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1C2B4FFC347EEEE8C433EBF368F8E46B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/AMScrollingNavbar/AMScrollingNavbar-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/AMScrollingNavbar/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/AMScrollingNavbar/AMScrollingNavbar.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>AMScrollingNavbar</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3DE769B71F3ADD944A008B13C01E1737</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIViewController+BetterLayoutGuides.m</string>
+			<key>path</key>
+			<string>TLYShyNavBar/Categories/UIViewController+BetterLayoutGuides.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3E4E89230EF59BC255123B67864ACF77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>404A5FC7EFAB3DAA153489AA23615570</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GTScrollNavigationBar-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4121C3C8ED8E4C322EE96541B2A7AF2A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8353453A8CAEC87F41F0328621B0FB9F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>430920B3321CEA63E2EAE47CA140D035</key>
+		<dict>
+			<key>fileRef</key>
+			<string>798A67AE551CB3CC613C25ECE5D6BC4F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>478E5E2ED73726ACED841EBE75AF497A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3D39C438F5A8CFBAB66CE042FCC988F0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/BLKFlexibleHeightBar/BLKFlexibleHeightBar-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/BLKFlexibleHeightBar/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/BLKFlexibleHeightBar/BLKFlexibleHeightBar.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>BLKFlexibleHeightBar</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>4A179D6C79F6EFFD8C35F7FC04DAD800</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>809B24D06955EA66EFA5F06E09ADCDB3</string>
+				<string>3D470C10DD21C48A57A8A57E6839B5CF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>4A46D5CFB851128BA164DD46899AC178</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4BA043268447D208F0644E35A10747DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BF438C70DF3049B429454A7AB657D86</string>
+				<string>F40160DDC583AB2530426E7FF61B0BDA</string>
+				<string>B88BC94698B43757BD797138A3850FBD</string>
+				<string>F4313F9ADD32CD5A3A000C24EA75E808</string>
+				<string>1D8B01845C615FD3E4A48C207C051360</string>
+				<string>287DCE24C2FA37EDC68E29C299BD3691</string>
+				<string>D79AFBEBEEFDD34936DB97BE90EA357B</string>
+				<string>84C3C3C3DF171633CF0D885EFF53709B</string>
+				<string>1E749016B927A83A75DE2ED76704BEB5</string>
+				<string>A77F9D90135AD477838D7B9D3E127404</string>
+				<string>1ABF9A2326DE17F8176475EA293E432D</string>
+				<string>B3411489E228157582C23E49E6ECCB64</string>
+				<string>8AB3C49300C6A1F8779FDE86B525A5C2</string>
+				<string>A376F225CD82680F37CACF5CCA71B20A</string>
+				<string>DEA3118D24ED6F4F1FA835154DFDC4B2</string>
+				<string>8BA438541B0C8E089E2F69F9C1244AF7</string>
+				<string>798A67AE551CB3CC613C25ECE5D6BC4F</string>
+				<string>B2B3E35A408541317C040828812F791A</string>
+				<string>3DE769B71F3ADD944A008B13C01E1737</string>
+				<string>26B96755279366277265D225EDBF4E8B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TLYShyNavBar</string>
+			<key>path</key>
+			<string>TLYShyNavBar</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>51092995EFE3777877BAC1CA305DF3E1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>GTScrollNavigationBar.h</string>
+			<key>path</key>
+			<string>GTScrollNavigationBar/GTScrollNavigationBar.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>536B9F35AFF1A6725F02302B5F55F59B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>4A179D6C79F6EFFD8C35F7FC04DAD800</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C213588E5A024707F319D8C0F16AC924</string>
+				<string>EFCA8A6DC5ECAB29DD9685A3AE2EADE5</string>
+				<string>80C38814B3FBB214B7FCD83249751252</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AMScrollingNavbar</string>
+			<key>productName</key>
+			<string>AMScrollingNavbar</string>
+			<key>productReference</key>
+			<string>859BAC1850C638B9BC71F1E6BB6FD08C</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>5A5DFABABF943B4FBD74E28856C9EBF7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2B3E35A408541317C040828812F791A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5ABE14B6995460C1F017D03F1005BDF1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ScrollingNavigationViewController.swift</string>
+			<key>path</key>
+			<string>Source/ScrollingNavigationViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE039ED37F6B8324D9AD1035DEBD600</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BLKFlexibleHeightBarBehaviorDefiner.m</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/BLKFlexibleHeightBarBehaviorDefiner.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5BE89F47612F61C2191541F38BA2AB1A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BF438C70DF3049B429454A7AB657D86</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5C56B57F01232752AFD9A63FCC5524DC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>BLKFlexibleHeightBar</string>
+			<key>target</key>
+			<string>7AAA83A0B19E9AB585A6FFE3AAF1D304</string>
+			<key>targetProxy</key>
+			<string>DA3022E25AED05C297000FDDEC5A8521</string>
+		</dict>
+		<key>5CE5176205D06FF3FFE3DDDA9291E44B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5F6D973328F8F5E6760028CCD17CEBE6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5ABE14B6995460C1F017D03F1005BDF1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63F1B444BDC605135F1BC74FC6C9F14C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BLKFlexibleHeightBarBehaviorDefiner.h</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/BLKFlexibleHeightBarBehaviorDefiner.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>658AE8E7414CD9F9217DA73D095A0FA4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3409797BF9C6CC77C2D8C3E60DE8541C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>688783CFC4CC2FEC8568CFEF6FEE66E3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1E749016B927A83A75DE2ED76704BEB5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6911495EAB347BCA76246494EC410C73</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>86B89A1CB1BB2B97FF17D483A3C3F02A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/GTScrollNavigationBar/GTScrollNavigationBar-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/GTScrollNavigationBar/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/GTScrollNavigationBar/GTScrollNavigationBar.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>GTScrollNavigationBar</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>69C3A1C45DD1A56AB34B5D7B3A728439</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>GTScrollNavigationBar-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6BE8D2EFAB034E920531D7C5FF395F00</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>03DDCED9E8F69ED3483F8CD581FF12F8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D057C09551A92BD54C627876A9947AF8</string>
+				<string>3CE36BC62F503BC9C7435106F6142671</string>
+				<string>C5CE5CB3B0807D27EA8615304E0383B6</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>829699BB1667A9E1C7EA1400D2365E1B</string>
+				<string>5C56B57F01232752AFD9A63FCC5524DC</string>
+				<string>EFD0264E83FD13A81231D45E4BD1180B</string>
+				<string>ABFC7CDEA09986CD70D5FE5E1EDEBDDA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>productName</key>
+			<string>Pods</string>
+			<key>productReference</key>
+			<string>CB08DAA177BDCAD7C34AD09ED0F25D8F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>6FC4E01BEDFAD2ECF5783C4E16D34B17</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F190ED62FA26942DE27FAB79EC656E37</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>715DE01D5EEE8E3B14C8558473C7D797</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B3411489E228157582C23E49E6ECCB64</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>724EB0CB71CC171CEF49E11990F739DF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AMScrollingNavbar-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>72A60A608EF9AC4760D3EB763FB9436C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F11D727157D32A1A1750771EE31EB754</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>74857149DC1E0D599B8A01A78349A926</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>74B1AEDAE13BBE13C7B155E1B5C037A4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8BA438541B0C8E089E2F69F9C1244AF7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>75D98FF52E597A11900E131B6C4E1ADA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E8446514FBAD26C0E18F24A5715AEF67</string>
+				<string>79A9DEDC89FE8336BF5FEDAAF75BF7FC</string>
+				<string>D0405803033A2A777B8E4DFA0C1800ED</string>
+				<string>87B213035BAC5F75386F62D3C75D2342</string>
+				<string>894E5DA93A9F359521A89826BE6DA777</string>
+				<string>E7F21354943D9F42A70697D5A5EF72E9</string>
+				<string>CBC0F7C552B739C909B650A0F42F7F38</string>
+				<string>2BCC458FDD5F692BBB2BFC64BB5701FC</string>
+				<string>977577C045EDA9D9D1F46E2598D19FC7</string>
+				<string>DA312349A49333542E6F4B36B329960E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>path</key>
+			<string>Target Support Files/Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>798A67AE551CB3CC613C25ECE5D6BC4F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIScrollView+Helpers.m</string>
+			<key>path</key>
+			<string>TLYShyNavBar/Categories/UIScrollView+Helpers.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79A9DEDC89FE8336BF5FEDAAF75BF7FC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AAA83A0B19E9AB585A6FFE3AAF1D304</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DD10D22F914F310C572A932FCCD1365D</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E73CF6F142DC1028D517807586D9B5E0</string>
+				<string>3B515F35429A1654A3F074562DC5D626</string>
+				<string>DAAE6855DE85C44EF14593D60F1ADA15</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BLKFlexibleHeightBar</string>
+			<key>productName</key>
+			<string>BLKFlexibleHeightBar</string>
+			<key>productReference</key>
+			<string>7F54FB952F9F94CCF4D14498E50FA2A3</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>7C113BEACB1F588C67451D27215D9415</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D247D653DAF8F0BED6CB876438DC6D0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>F0C830E4F70E816A49D09A00CE19E331</string>
+				<string>110B241776340F60B5133F3DAC241D2C</string>
+				<string>B7B80995527643776607AFFA75B91E24</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F54FB952F9F94CCF4D14498E50FA2A3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>BLKFlexibleHeightBar.framework</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7FD8CA5584DAEBA84C2D740EC7CC6086</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BLKFlexibleHeightBarSubviewLayoutAttributes.h</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/BLKFlexibleHeightBarSubviewLayoutAttributes.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>809B24D06955EA66EFA5F06E09ADCDB3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1C2B4FFC347EEEE8C433EBF368F8E46B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/AMScrollingNavbar/AMScrollingNavbar-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/AMScrollingNavbar/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/AMScrollingNavbar/AMScrollingNavbar.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>AMScrollingNavbar</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>80C38814B3FBB214B7FCD83249751252</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0334ACE54369B7E788FC77B7A5F67A08</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>822E63BC0DF0B878579C697B4DFB0CEE</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9AB862733F3330E42ECF32C6C9F5412B</string>
+				<string>DE8A72981E62029C74B69F2985BFDD40</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>827B116713909DF873CD230E5ACA84C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A77F9D90135AD477838D7B9D3E127404</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>829699BB1667A9E1C7EA1400D2365E1B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>AMScrollingNavbar</string>
+			<key>target</key>
+			<string>536B9F35AFF1A6725F02302B5F55F59B</string>
+			<key>targetProxy</key>
+			<string>258EE8F511B9DB65846EB569DF66D304</string>
+		</dict>
+		<key>82F25EF94D38B006CDDC3B57F07FC063</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AMScrollingNavbar-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8353453A8CAEC87F41F0328621B0FB9F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SquareCashStyleBehaviorDefiner.h</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/SquareCashStyleBehaviorDefiner.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>84C3C3C3DF171633CF0D885EFF53709B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>TLYShyNavBarManager.m</string>
+			<key>path</key>
+			<string>TLYShyNavBar/TLYShyNavBarManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>859BAC1850C638B9BC71F1E6BB6FD08C</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>AMScrollingNavbar.framework</string>
+			<key>path</key>
+			<string>AMScrollingNavbar.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>85D7E319E359DD0D1D6EA677546A3A7F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>TLYShyNavBar.framework</string>
+			<key>path</key>
+			<string>TLYShyNavBar.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>86B89A1CB1BB2B97FF17D483A3C3F02A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>GTScrollNavigationBar.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>87B213035BAC5F75386F62D3C75D2342</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>894E5DA93A9F359521A89826BE6DA777</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8951FD601728EF45733E66C7B1F7EDEE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>84C3C3C3DF171633CF0D885EFF53709B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8AB3C49300C6A1F8779FDE86B525A5C2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>TLYShyStatusBarController.m</string>
+			<key>path</key>
+			<string>TLYShyNavBar/ShyControllers/TLYShyStatusBarController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8B22E08FAC72B0AA603FC9B270956F59</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SquareCashStyleBehaviorDefiner.m</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/SquareCashStyleBehaviorDefiner.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8B94DF7442B5FE2815B9629E876787D4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2DCF84EF5DFEABF777357954902B66F7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/TLYShyNavBar/TLYShyNavBar-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/TLYShyNavBar/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/TLYShyNavBar/TLYShyNavBar.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>TLYShyNavBar</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>8BA438541B0C8E089E2F69F9C1244AF7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIScrollView+Helpers.h</string>
+			<key>path</key>
+			<string>TLYShyNavBar/Categories/UIScrollView+Helpers.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8CE46647ECC6263CB13349C2128FA336</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E9AE9A22BA3C5EA1438992F6CCD860BB</string>
+			<key>buildPhases</key>
+			<array>
+				<string>2204ECC7DF3933450022047BB32E9FA0</string>
+				<string>D76E4E597C666F72D2FA91F2D28B26D8</string>
+				<string>269B83E64A509CADF249C257FF5B10DB</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TLYShyNavBar</string>
+			<key>productName</key>
+			<string>TLYShyNavBar</string>
+			<key>productReference</key>
+			<string>85D7E319E359DD0D1D6EA677546A3A7F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>9037D500826F0F325F47DE2B53C24D95</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E1917C5E79E1FB0B246BF9385EB1471F</string>
+				<string>2893FD3A207C15F10775D6D7D906A18E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>90D9E156AF5D9F8F149D3A30F15AF014</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A673FDF00787981257EDDB94F00AB913</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>92F4907B43D31D0943E3E4AEB7F4C708</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GTScrollNavigationBar-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9467228929DC9FD0AE86FAE00651F833</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BLKFlexibleHeightBar.h</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/BLKFlexibleHeightBar.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>94B446794AAF3164B1FF87530E38FB05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>977577C045EDA9D9D1F46E2598D19FC7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9A680E173A9160802FB711028EDE2524</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0E5C5916E5E696DDF40F88EE7915078F</string>
+				<string>F190ED62FA26942DE27FAB79EC656E37</string>
+				<string>5ABE14B6995460C1F017D03F1005BDF1</string>
+				<string>AFED5C1E6026F0E5F8A3A3A0714171E5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>AMScrollingNavbar</string>
+			<key>path</key>
+			<string>AMScrollingNavbar</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9AB862733F3330E42ECF32C6C9F5412B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>92F4907B43D31D0943E3E4AEB7F4C708</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>9AF3C2608A8AA9A72A01811619032A13</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9BA0F1A2D6F71EA97A2E483EBE95B460</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>0C1AEDD0F867B84A0898857F18F7A8D8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>9037D500826F0F325F47DE2B53C24D95</string>
+				<string>2C5AB66004C14C2F73A6AE53798FF890</string>
+				<string>822E63BC0DF0B878579C697B4DFB0CEE</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>GTScrollNavigationBar</string>
+			<key>productName</key>
+			<string>GTScrollNavigationBar</string>
+			<key>productReference</key>
+			<string>CCDD10220EEA96B8BA65001696973641</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>9C5B84C9F18053A5F8A19822FDF574DB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ACC96CAB8980D18D29330FFBF440F800</string>
+				<string>33A615E5F9EF5EDD38A4B9AC4199DA4B</string>
+				<string>9467228929DC9FD0AE86FAE00651F833</string>
+				<string>308EC6C69CE6985C8AE7DA7C894C1BEB</string>
+				<string>63F1B444BDC605135F1BC74FC6C9F14C</string>
+				<string>5AE039ED37F6B8324D9AD1035DEBD600</string>
+				<string>7FD8CA5584DAEBA84C2D740EC7CC6086</string>
+				<string>B54F98DEB8E88B3628C561E2F66CC83C</string>
+				<string>1853A1EB72B3E8DB9D62531701FADBFC</string>
+				<string>DD90DFDC5F5F4F42D385F1ED28450B0B</string>
+				<string>8353453A8CAEC87F41F0328621B0FB9F</string>
+				<string>8B22E08FAC72B0AA603FC9B270956F59</string>
+				<string>D71262DB18F5AD49220A080C5A1E8BFA</string>
+				<string>3409797BF9C6CC77C2D8C3E60DE8541C</string>
+				<string>D3C2B67D3505A4037EF7137CC1DBDB0A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>BLKFlexibleHeightBar</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9CE7E01E48511CC842F94F6FC818E4C2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TLYShyNavBar.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9D67F27677A31D0E9D3EFA354FC1B6AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F46E075D2959AE2F821693A8A83ACBF6</string>
+				<string>86B89A1CB1BB2B97FF17D483A3C3F02A</string>
+				<string>69C3A1C45DD1A56AB34B5D7B3A728439</string>
+				<string>404A5FC7EFAB3DAA153489AA23615570</string>
+				<string>92F4907B43D31D0943E3E4AEB7F4C708</string>
+				<string>BE6E7614E697B20F768A460D4F2722CA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/GTScrollNavigationBar</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EA6B707658F73F48A164401C6854159</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B54F98DEB8E88B3628C561E2F66CC83C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9FD3A8D76E9CFB7B87BFF6CC38818355</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63F1B444BDC605135F1BC74FC6C9F14C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>A02814CA6C93B58F5DF0E77F0B7E1DDB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8B22E08FAC72B0AA603FC9B270956F59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A1F4A8CC1A5AF7C0DE6AFEEBBCA1A4A7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A376F225CD82680F37CACF5CCA71B20A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TLYShyViewController.h</string>
+			<key>path</key>
+			<string>TLYShyNavBar/ShyControllers/TLYShyViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A673FDF00787981257EDDB94F00AB913</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A77F9D90135AD477838D7B9D3E127404</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TLYShyScrollViewController.h</string>
+			<key>path</key>
+			<string>TLYShyNavBar/ShyControllers/TLYShyScrollViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8BBFA2307EE5E41B8EF5E2D0FC03C38</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TLYShyNavBar-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A919C5527B28218FECE863833D4CFBA8</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>8CE46647ECC6263CB13349C2128FA336</string>
+			<key>remoteInfo</key>
+			<string>TLYShyNavBar</string>
+		</dict>
+		<key>AB1AFD874A2C504B76F88B670C76DE7B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ABDBE14C32E4B45B6F7C822937262797</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>9BA0F1A2D6F71EA97A2E483EBE95B460</string>
+			<key>remoteInfo</key>
+			<string>GTScrollNavigationBar</string>
+		</dict>
+		<key>ABFC7CDEA09986CD70D5FE5E1EDEBDDA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>TLYShyNavBar</string>
+			<key>target</key>
+			<string>8CE46647ECC6263CB13349C2128FA336</string>
+			<key>targetProxy</key>
+			<string>A919C5527B28218FECE863833D4CFBA8</string>
+		</dict>
+		<key>ACC96CAB8980D18D29330FFBF440F800</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BLKDelegateSplitter.h</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/BLKDelegateSplitter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AF84FBE4BC8DB2A0287FA3741A90B55A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>GTScrollNavigationBar.m</string>
+			<key>path</key>
+			<string>GTScrollNavigationBar/GTScrollNavigationBar.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AFED5C1E6026F0E5F8A3A3A0714171E5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2E6487BC4CC08EBE5CD8A40ED3294B9F</string>
+				<string>1C2B4FFC347EEEE8C433EBF368F8E46B</string>
+				<string>82F25EF94D38B006CDDC3B57F07FC063</string>
+				<string>724EB0CB71CC171CEF49E11990F739DF</string>
+				<string>2E85CAFECBB62E2CEA4957BDC7AB3829</string>
+				<string>7C113BEACB1F588C67451D27215D9415</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/AMScrollingNavbar</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2B3E35A408541317C040828812F791A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIViewController+BetterLayoutGuides.h</string>
+			<key>path</key>
+			<string>TLYShyNavBar/Categories/UIViewController+BetterLayoutGuides.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3411489E228157582C23E49E6ECCB64</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TLYShyStatusBarController.h</string>
+			<key>path</key>
+			<string>TLYShyNavBar/ShyControllers/TLYShyStatusBarController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B54F98DEB8E88B3628C561E2F66CC83C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BLKFlexibleHeightBarSubviewLayoutAttributes.m</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/BLKFlexibleHeightBarSubviewLayoutAttributes.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B5B8985540776245F2DF414C524E4B64</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82F25EF94D38B006CDDC3B57F07FC063</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B7B80995527643776607AFFA75B91E24</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>75D98FF52E597A11900E131B6C4E1ADA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B88BC94698B43757BD797138A3850FBD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TLYDelegateProxy.h</string>
+			<key>path</key>
+			<string>TLYShyNavBar/Categories/TLYDelegateProxy.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BCEDD447FF3B8982D06854F545F2B72B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BE2431A5BCE1A4BC22D7F37290E08DC8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>22CD25ECF980061230AA476A06E614A1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BE6E7614E697B20F768A460D4F2722CA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3E4E89230EF59BC255123B67864ACF77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C213588E5A024707F319D8C0F16AC924</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B5B8985540776245F2DF414C524E4B64</string>
+				<string>1B065BA7D7E05581175E8471E786AFF8</string>
+				<string>6FC4E01BEDFAD2ECF5783C4E16D34B17</string>
+				<string>5F6D973328F8F5E6760028CCD17CEBE6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C351AAED65C08058A47640D53375FA40</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D71262DB18F5AD49220A080C5A1E8BFA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C5CE5CB3B0807D27EA8615304E0383B6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D3C69DF8AD450243EA5E1461679B3340</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CA6C20F1158D7E1CB8CFFE93228A9688</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3DE769B71F3ADD944A008B13C01E1737</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB08DAA177BDCAD7C34AD09ED0F25D8F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods.framework</string>
+			<key>path</key>
+			<string>Pods.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CBC0F7C552B739C909B650A0F42F7F38</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC206997EED453E0EEBA757ED975CEFA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>308EC6C69CE6985C8AE7DA7C894C1BEB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CCDD10220EEA96B8BA65001696973641</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>GTScrollNavigationBar.framework</string>
+			<key>path</key>
+			<string>GTScrollNavigationBar.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CF5C422E5C591F100805AFABB461D26D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AE039ED37F6B8324D9AD1035DEBD600</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CF75C9D058ED100B0A7F4C3CC8ED9B80</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ACC96CAB8980D18D29330FFBF440F800</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D0405803033A2A777B8E4DFA0C1800ED</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D057C09551A92BD54C627876A9947AF8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FA2186BFE99B395DE23A12C32F40EBBE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D090A7187CBBE7BAF59A50030746DEC9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F40160DDC583AB2530426E7FF61B0BDA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D09BA74C541668C2C10AFACABF15F13D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>33A615E5F9EF5EDD38A4B9AC4199DA4B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D20667746CABEB831C07D4382F98DBC1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1D8B01845C615FD3E4A48C207C051360</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D353C5513C109857CCDAFD65EED7EBD7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEA3118D24ED6F4F1FA835154DFDC4B2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D3C11A149015DC3E5C77DF277C0A6704</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>977577C045EDA9D9D1F46E2598D19FC7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods/Pods.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D3C2B67D3505A4037EF7137CC1DBDB0A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7D247D653DAF8F0BED6CB876438DC6D0</string>
+				<string>3D39C438F5A8CFBAB66CE042FCC988F0</string>
+				<string>4A46D5CFB851128BA164DD46899AC178</string>
+				<string>A1F4A8CC1A5AF7C0DE6AFEEBBCA1A4A7</string>
+				<string>A673FDF00787981257EDDB94F00AB913</string>
+				<string>AB1AFD874A2C504B76F88B670C76DE7B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/BLKFlexibleHeightBar</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D3C69DF8AD450243EA5E1461679B3340</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2BCC458FDD5F692BBB2BFC64BB5701FC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>110B241776340F60B5133F3DAC241D2C</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>536B9F35AFF1A6725F02302B5F55F59B</string>
+				<string>7AAA83A0B19E9AB585A6FFE3AAF1D304</string>
+				<string>9BA0F1A2D6F71EA97A2E483EBE95B460</string>
+				<string>6BE8D2EFAB034E920531D7C5FF395F00</string>
+				<string>8CE46647ECC6263CB13349C2128FA336</string>
+			</array>
+		</dict>
+		<key>D4338675C06ADF78F593A5AD0C72C697</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DD90DFDC5F5F4F42D385F1ED28450B0B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D71262DB18F5AD49220A080C5A1E8BFA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIView+BLKFlexibleHeightBarSubview.h</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/UIView+BLKFlexibleHeightBarSubview.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D76E4E597C666F72D2FA91F2D28B26D8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1C2DB4E7A8356C12273A526ADF37365A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D77BB3FB1D466B0F4E8EC6CB2DCF11E6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1ABF9A2326DE17F8176475EA293E432D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D79AFBEBEEFDD34936DB97BE90EA357B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TLYShyNavBarManager.h</string>
+			<key>path</key>
+			<string>TLYShyNavBar/TLYShyNavBarManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D997F718B7ADE7257647F4BE73FAAA46</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8AB3C49300C6A1F8779FDE86B525A5C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA3022E25AED05C297000FDDEC5A8521</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>7AAA83A0B19E9AB585A6FFE3AAF1D304</string>
+			<key>remoteInfo</key>
+			<string>BLKFlexibleHeightBar</string>
+		</dict>
+		<key>DA312349A49333542E6F4B36B329960E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAAE6855DE85C44EF14593D60F1ADA15</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CF75C9D058ED100B0A7F4C3CC8ED9B80</string>
+				<string>90D9E156AF5D9F8F149D3A30F15AF014</string>
+				<string>136CDF804C6DB1F93B6D97E9476DED81</string>
+				<string>9FD3A8D76E9CFB7B87BFF6CC38818355</string>
+				<string>183E20A67C4407B12C9D8C7EA98F4C61</string>
+				<string>0A927F5EA61B6C07404397C96F1B7DFB</string>
+				<string>4121C3C8ED8E4C322EE96541B2A7AF2A</string>
+				<string>C351AAED65C08058A47640D53375FA40</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DD10D22F914F310C572A932FCCD1365D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F7CFEBBE46CDBC0C5F744B1FE157A6BC</string>
+				<string>478E5E2ED73726ACED841EBE75AF497A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DD90DFDC5F5F4F42D385F1ED28450B0B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FacebookStyleBarBehaviorDefiner.m</string>
+			<key>path</key>
+			<string>BLKFlexibleHeightBar/FacebookStyleBarBehaviorDefiner.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DE8A72981E62029C74B69F2985BFDD40</key>
+		<dict>
+			<key>fileRef</key>
+			<string>51092995EFE3777877BAC1CA305DF3E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DEA3118D24ED6F4F1FA835154DFDC4B2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>TLYShyViewController.m</string>
+			<key>path</key>
+			<string>TLYShyNavBar/ShyControllers/TLYShyViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E1917C5E79E1FB0B246BF9385EB1471F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>69C3A1C45DD1A56AB34B5D7B3A728439</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2CD6AD2DBE999BF1DBEBD495ACCCB91</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A376F225CD82680F37CACF5CCA71B20A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E73CF6F142DC1028D517807586D9B5E0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D09BA74C541668C2C10AFACABF15F13D</string>
+				<string>23AFA54C246EF4AC477D1319B5AEFD02</string>
+				<string>CC206997EED453E0EEBA757ED975CEFA</string>
+				<string>CF5C422E5C591F100805AFABB461D26D</string>
+				<string>9EA6B707658F73F48A164401C6854159</string>
+				<string>D4338675C06ADF78F593A5AD0C72C697</string>
+				<string>A02814CA6C93B58F5DF0E77F0B7E1DDB</string>
+				<string>658AE8E7414CD9F9217DA73D095A0FA4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E7F21354943D9F42A70697D5A5EF72E9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E8446514FBAD26C0E18F24A5715AEF67</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E9AE9A22BA3C5EA1438992F6CCD860BB</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FF3D638AB4661DB1487D2A0728E23145</string>
+				<string>8B94DF7442B5FE2815B9629E876787D4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>EBF68A4062AC2C9B3CE6A519B2685F1B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>86B89A1CB1BB2B97FF17D483A3C3F02A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/GTScrollNavigationBar/GTScrollNavigationBar-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/GTScrollNavigationBar/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/GTScrollNavigationBar/GTScrollNavigationBar.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>GTScrollNavigationBar</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>EFB551BDF5D1A1BF7BC26E70B4F38834</key>
+		<dict>
+			<key>fileRef</key>
+			<string>287DCE24C2FA37EDC68E29C299BD3691</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>EFCA8A6DC5ECAB29DD9685A3AE2EADE5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9AF3C2608A8AA9A72A01811619032A13</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EFD0264E83FD13A81231D45E4BD1180B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>GTScrollNavigationBar</string>
+			<key>target</key>
+			<string>9BA0F1A2D6F71EA97A2E483EBE95B460</string>
+			<key>targetProxy</key>
+			<string>ABDBE14C32E4B45B6F7C822937262797</string>
+		</dict>
+		<key>F0C830E4F70E816A49D09A00CE19E331</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9A680E173A9160802FB711028EDE2524</string>
+				<string>9C5B84C9F18053A5F8A19822FDF574DB</string>
+				<string>3B49E0838427EEF119E88E515F8734EF</string>
+				<string>4BA043268447D208F0644E35A10747DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F11D727157D32A1A1750771EE31EB754</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TLYShyNavBar-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F190ED62FA26942DE27FAB79EC656E37</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ScrollingNavigationController.swift</string>
+			<key>path</key>
+			<string>Source/ScrollingNavigationController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F40160DDC583AB2530426E7FF61B0BDA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSObject+TLYSwizzlingHelpers.m</string>
+			<key>path</key>
+			<string>TLYShyNavBar/Categories/NSObject+TLYSwizzlingHelpers.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F4313F9ADD32CD5A3A000C24EA75E808</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>TLYDelegateProxy.m</string>
+			<key>path</key>
+			<string>TLYShyNavBar/Categories/TLYDelegateProxy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F46E075D2959AE2F821693A8A83ACBF6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>GTScrollNavigationBar.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7CFEBBE46CDBC0C5F744B1FE157A6BC</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3D39C438F5A8CFBAB66CE042FCC988F0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/BLKFlexibleHeightBar/BLKFlexibleHeightBar-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/BLKFlexibleHeightBar/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/BLKFlexibleHeightBar/BLKFlexibleHeightBar.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>BLKFlexibleHeightBar</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FA2186BFE99B395DE23A12C32F40EBBE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>894E5DA93A9F359521A89826BE6DA777</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF3D638AB4661DB1487D2A0728E23145</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2DCF84EF5DFEABF777357954902B66F7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/TLYShyNavBar/TLYShyNavBar-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/TLYShyNavBar/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/TLYShyNavBar/TLYShyNavBar.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>TLYShyNavBar</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

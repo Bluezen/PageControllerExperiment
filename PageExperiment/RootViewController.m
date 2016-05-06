@@ -19,6 +19,8 @@
 
 #import "TouchOverlayApplication.h"
 
+#import "MyScrollView.h"
+
 @interface RootViewController ()
 
 @property (readonly, strong, nonatomic) ModelController *modelController;
@@ -40,46 +42,24 @@
     
     self.lastContentOffset = 0;
     
-//    self.headerScrollView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
-    
     if (self.pageViewController && [self.pageViewController.viewControllers.firstObject isKindOfClass:DataViewController.class]) {
         [self.headerScrollView setNeedsLayout];
         [self.headerScrollView layoutIfNeeded];
         DataViewController *dataController = self.pageViewController.viewControllers.firstObject;
         
-        dataController.cstrStackViewTop.constant = CGRectGetMaxY(self.headerMapView.frame);
-        
-//        self.headerScrollView.contentOffset = CGPointMake(0, -64);
-        
+        dataController.cstrStackViewTop.constant = CGRectGetMaxY(self.headerView.frame) + CGRectGetHeight(self.headerMapView.bounds);
     }
 }
 
--(void)viewDidLayoutSubviews
+-(void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidLayoutSubviews];
+    [super viewDidAppear:animated];
     
-}
-
-//-(void)viewDidAppear:(BOOL)animated
-//{
-//    [super viewDidAppear:animated];
-//    
-//    TouchOverlayApplication *app = (TouchOverlayApplication *)[UIApplication sharedApplication];
-//    app.shouldForward = YES;
-//    app.viewToForward = self.headerScrollViewContainerView;
-//}
-//
-//-(void)viewDidDisappear:(BOOL)animated
-//{
-//    [super viewDidDisappear:animated];
-//    
-//    TouchOverlayApplication *app = (TouchOverlayApplication *)[UIApplication sharedApplication];
-//    app.shouldForward = NO;
-//}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    DataViewController *dataController = self.pageViewController.viewControllers.firstObject;
+    
+    CGFloat dataHeight = dataController.scrollView.contentSize.height;
+    
+    self.cstrHeaderEmptyViewHeight.constant = dataHeight - dataController.cstrStackViewTop.constant;
 }
 
 - (ModelController *)modelController {
@@ -98,68 +78,46 @@
     DataViewController *newController = (DataViewController *)pendingViewControllers.firstObject;
     
     if (newController) {
+        CGFloat dataOffset = CGRectGetMaxY(self.headerView.frame) + CGRectGetHeight(self.headerMapView.bounds);
         newController.scrollView.delegate = self;
-        newController.cstrStackViewTop.constant = CGRectGetMaxY(self.headerMapView.frame) ;
+        newController.cstrStackViewTop.constant = dataOffset ;
         [newController.view setNeedsLayout];
         [newController.view layoutIfNeeded];
         
         // Adjust newController scrollView
-        newController.scrollView.contentOffset = CGPointMake(0, MIN(CGRectGetMaxY(self.headerMapView.frame) - 64, currentController.scrollView.contentOffset.y));
+        newController.scrollView.contentOffset = CGPointMake(0, MIN(dataOffset - self.topLayoutGuide.length, currentController.scrollView.contentOffset.y));
     }
 }
 
 -(void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed
 {
     if (completed) {
-//        DataViewController *currentController = pageViewController.viewControllers.firstObject;
-//        
+        DataViewController *currentController = pageViewController.viewControllers.firstObject;
+        
+        self.cstrHeaderEmptyViewHeight.constant = currentController.scrollView.contentSize.height - currentController.cstrStackViewTop.constant;
 //        [(ScrollingNavigationController *)self.navigationController followScrollView:currentController.scrollView delay:10.0f];
     }
 }
 
-//- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
-//{
-//    CGFloat mapOffset = CGRectGetMinY(self.headerMapView.frame);
-//    
-//    if (scrollView == self.headerScrollView && targetContentOffset->y > mapOffset) {
-//        scrollView.delegate = nil;
-//        
-//        DataViewController *currentController = self.pageViewController.viewControllers.firstObject;
-//        currentController.scrollView.delegate = self;
-//        
-//    }
-//}
-
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    if (!self.isViewLoaded) {
-        return;
-    }
+    UIScrollView *dataScrollView = ((DataViewController *)self.pageViewController.viewControllers.firstObject).scrollView;
     
-    DataViewController *currentController = self.pageViewController.viewControllers.firstObject;
+//    CGFloat yOffset = MIN( scrollView.contentOffset.y , CGRectGetMinY(self.headerMapView.frame) - CGRectGetMaxY(self.navigationController.navigationBar.frame) );
     
-    CGFloat mapOffset = CGRectGetMinY(self.headerMapView.frame);
-    
-    if (scrollView == currentController.scrollView) {
+    if (scrollView == dataScrollView) {
         
-        NSLog(@"Content Offset %f", scrollView.contentOffset.y);
+//        NSLog(@"DATA Content Offset %f", scrollView.contentOffset.y);
         
-        
-        CGFloat yOffset = MIN( scrollView.contentOffset.y , mapOffset - CGRectGetMaxY(self.navigationController.navigationBar.frame));
-        
-        self.headerScrollView.contentOffset = CGPointMake(0, yOffset);
+        self.headerScrollView.contentOffset = scrollView.contentOffset;
         
     }
-//    else if (scrollView == self.headerScrollView) {
-//        
-//        if (scrollView.contentOffset.y < (mapOffset - CGRectGetMaxY(self.navigationController.navigationBar.frame)))
-//        {
-//            currentController.scrollView.contentOffset = scrollView.contentOffset;
-//        } else {
-//            CGFloat yOffset = mapOffset - CGRectGetMaxY(self.navigationController.navigationBar.frame);
-//            scrollView.contentOffset = CGPointMake(0, yOffset);
-//        }
-//    }
+    else if (scrollView == self.headerScrollView) {
+        
+//        NSLog(@"HEADER Content Offset %f", scrollView.contentOffset.y);
+        
+        dataScrollView.contentOffset = scrollView.contentOffset;
+    }
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -174,8 +132,6 @@
         [self.pageViewController setViewControllers:@[startingViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
         
         self.pageViewController.dataSource = self.modelController;
-        
-//        startingViewController.scrollView.delegate = self;
         
 //        [(ScrollingNavigationController *)self.navigationController followScrollView:startingViewController.scrollView delay:10.0f];
     }
@@ -192,7 +148,7 @@
 }
 
 - (IBAction)btnHeaderViewPushed:(id)sender {
-    
     self.lblHeaderViewCenter.text = [[NSDate date] description];
 }
+
 @end
