@@ -60,6 +60,8 @@
     CGFloat dataHeight = dataController.scrollView.contentSize.height;
     
     self.cstrHeaderEmptyViewHeight.constant = dataHeight - dataController.cstrStackViewTop.constant;
+    
+//    [(ScrollingNavigationController *)self.navigationController followScrollView:dataController.scrollView delay:dataController.cstrStackViewTop.constant];
 }
 
 - (ModelController *)modelController {
@@ -101,23 +103,56 @@
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    UIScrollView *dataScrollView = ((DataViewController *)self.pageViewController.viewControllers.firstObject).scrollView;
+    DataViewController * dataController = (DataViewController *)self.pageViewController.viewControllers.firstObject;
     
-//    CGFloat yOffset = MIN( scrollView.contentOffset.y , CGRectGetMinY(self.headerMapView.frame) - CGRectGetMaxY(self.navigationController.navigationBar.frame) );
-    
-    if (scrollView == dataScrollView) {
-        
-//        NSLog(@"DATA Content Offset %f", scrollView.contentOffset.y);
+    if (scrollView == dataController.scrollView) {
         
         self.headerScrollView.contentOffset = scrollView.contentOffset;
         
-    }
-    else if (scrollView == self.headerScrollView) {
+    } else if (scrollView == self.headerScrollView) {
         
-//        NSLog(@"HEADER Content Offset %f", scrollView.contentOffset.y);
-        
-        dataScrollView.contentOffset = scrollView.contentOffset;
+        dataController.scrollView.contentOffset = scrollView.contentOffset;
     }
+    
+    CGFloat yOffset = scrollView.contentOffset.y;
+    CGFloat triggerOffset = dataController.cstrStackViewTop.constant - 64;
+    
+    CGFloat delta = triggerOffset - yOffset;
+    
+    UIWindow *statusBar = nil;
+    @try {
+        statusBar = (UIWindow *)[[UIApplication sharedApplication] valueForKey:[NSString stringWithFormat:@"%@tu%@indow", @"sta", @"sBarW"]];
+    } @catch (NSException *exception) {
+        // snif
+    }
+    
+    UINavigationBar *navBar = self.navigationController.navigationBar;
+    
+    if(yOffset > triggerOffset)
+    {
+        [statusBar setFrame:CGRectMake(0,
+                                       delta,
+                                       statusBar.frame.size.width,
+                                       statusBar.frame.size.height)];
+        [navBar setFrame:CGRectMake(0,
+                                    20 + delta,
+                                    navBar.frame.size.width,
+                                    navBar.frame.size.height)];
+        
+    }
+    else
+    {
+        [statusBar setFrame:CGRectMake(0,
+                                       0,
+                                       statusBar.frame.size.width,
+                                       statusBar.frame.size.height)];
+        [navBar setFrame:CGRectMake(0,
+                                    20,
+                                    navBar.frame.size.width,
+                                    navBar.frame.size.height)];
+    }
+    
+    
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -132,8 +167,6 @@
         [self.pageViewController setViewControllers:@[startingViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
         
         self.pageViewController.dataSource = self.modelController;
-        
-//        [(ScrollingNavigationController *)self.navigationController followScrollView:startingViewController.scrollView delay:10.0f];
     }
 }
 
