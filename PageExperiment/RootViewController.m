@@ -27,7 +27,8 @@
 
 @property (nonatomic, readonly) RootView *rootView;
 
-@property(nonatomic, assign) CGFloat lastContentOffset;
+@property(nonatomic, strong) UIBarButtonItem *barBtnPrev;
+@property(nonatomic, strong) UIBarButtonItem *barBtnNext;
 
 @end
 
@@ -38,9 +39,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.rootView.controller = self;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
-    self.lastContentOffset = 0;
+    self.rootView.controller = self;
     
     if (self.pageViewController && [self.pageViewController.viewControllers.firstObject isKindOfClass:DataViewController.class]) {
         [self.headerScrollView setNeedsLayout];
@@ -49,6 +50,13 @@
         
         dataController.cstrStackViewTop.constant = CGRectGetMaxY(self.headerView.frame) + CGRectGetHeight(self.headerMapView.bounds);
     }
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self setupBars];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -61,7 +69,12 @@
     
     self.cstrHeaderEmptyViewHeight.constant = dataHeight - dataController.cstrStackViewTop.constant;
     
-//    [(ScrollingNavigationController *)self.navigationController followScrollView:dataController.scrollView delay:dataController.cstrStackViewTop.constant];
+    
+    CGRect toolbarFrame = self.navigationController.toolbar.frame;
+    toolbarFrame.origin.y = CGRectGetHeight(self.view.bounds);
+    self.navigationController.toolbar.frame = toolbarFrame;
+    
+    self.navigationController.toolbar.alpha = 1.0f;
 }
 
 - (ModelController *)modelController {
@@ -153,6 +166,24 @@
     }
     
     
+    
+    const CGFloat screenHeight = CGRectGetHeight(self.view.bounds);
+    const double yMinOffset = screenHeight - (self.cstrHeaderViewTop.constant + 100) - self.topLayoutGuide.length;
+    const double yMaxOffset = CGRectGetMaxY(self.headerView.bounds);
+    double ratio = (yOffset - yMinOffset) / (yMaxOffset -yMinOffset);
+    
+    const CGFloat toolbarHeight = 44.0f;
+    
+    const double toolbarMinY = screenHeight -  toolbarHeight;
+    const double toolbarMaxY = screenHeight;
+    
+    CGRect toolbarFrame = self.navigationController.toolbar.frame;
+    if (yOffset > yMinOffset) {
+        toolbarFrame.origin.y = toolbarMaxY - (toolbarMaxY - toolbarMinY)*ratio;
+    } else {
+        toolbarFrame.origin.y = toolbarMaxY;
+    }
+    self.navigationController.toolbar.frame = toolbarFrame;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -182,6 +213,38 @@
 
 - (IBAction)btnHeaderViewPushed:(id)sender {
     self.lblHeaderViewCenter.text = [[NSDate date] description];
+}
+
+-(void)setupBars
+{
+    //
+    // Toolbar
+    if (self.barBtnPrev == nil) {
+        UIBarButtonItem *barBtnPrev = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(barBtnPrevPushed:)];
+        // disable prev btn initialy
+        barBtnPrev.enabled = NO;
+        self.barBtnPrev = barBtnPrev;
+    }
+    
+    if (self.barBtnNext == nil) {
+        UIBarButtonItem *barBtnNext = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(barBtnNextPushed:)];
+        self.barBtnNext = barBtnNext;
+    }
+    
+    
+    UIBarButtonItem *barFlexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    self.toolbarItems = @[barFlexibleSpace, barFlexibleSpace, self.barBtnPrev, barFlexibleSpace, self.barBtnNext, barFlexibleSpace, barFlexibleSpace];
+    
+    self.navigationController.toolbarHidden = NO;
+    self.navigationController.toolbar.alpha = 0.0f;
+}
+
+-(void)barBtnNextPushed:(UIBarButtonItem *)item
+{
+}
+
+-(void)barBtnPrevPushed:(UIBarButtonItem *)item
+{
 }
 
 @end
